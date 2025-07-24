@@ -8,25 +8,25 @@ const PopularCategories = () => {
     {
       id: 1,
       title: "Game Guides",
-      image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqMI0nmSJc6vtRTXnGuhOR_VADPHrJ1zVcpImPJDxFdcBwQ-6P",
+      image: "https://i.imgur.com/8eJp1Aa.jpg", // New relevant image
       path: "/game-guides"
     },
     {
       id: 2,
       title: "Game Reviews",
-      image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgzFWlc4KRdqiVDaLJLFOf5yjfpiZrYUuAM9VEIha3ZkrKsbw2",
+      image: "https://i.imgur.com/NyffWci.jpg", // New relevant image
       path: "/GameReviewpage"
     },
     {
       id: 3,
       title: "Tips & Tricks",
-      image: "https://i.pinimg.com/236x/0a/af/17/0aaf1746da240b4802844b77705aa1d7.jpg,
+      image: "https://i.imgur.com/6TgkeKN.jpg", // New relevant image
       path: "/tippage"
     },
     {
       id: 4,
       title: "Trending Games",
-      image: "https://media.licdn.com/dms/image/v2/D4D12AQF7-z-yzv-EhA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1732024202803?e=2147483647&v=beta&t=-Q_qTeR3kAAinf1ehRhNDjYQ1DK9fqjEQWTN0MOfQ5k",
+      image: "https://i.imgur.com/ikqk1g3.jpg", // New relevant image
       path: "/trending-games"
     }
   ];
