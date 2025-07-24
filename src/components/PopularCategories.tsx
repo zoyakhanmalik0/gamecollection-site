@@ -8,25 +8,25 @@ const PopularCategories = () => {
     {
       id: 1,
       title: "Game Guides",
-      image: "https://bartarinb.com/wp-content/uploads/2025/07/56566.webp",
+      image: "https://static.vecteezy.com/system/resources/previews/023/438/099/non_2x/group-of-asian-friends-playing-card-games-for-fun-in-a-hostel-during-their-free-time-while-traveling-together-soft-and-selective-focus-photo.jpg",
       path: "/game-guides"
     },
     {
       id: 2,
       title: "Game Reviews",
-      image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqsv0lBwZ-HYpTzSYzVxKamAgF8bZBKu2vNOdDYEl99sG0cd9I",
+      image: "https://images.pexels.com/videos/6813811/pexels-photo-6813811.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       path: "/GameReviewpage"
     },
     {
       id: 3,
       title: "Tips & Tricks",
-      image: "https://i.pinimg.com/736x/f7/ee/3d/f7ee3dfc72fc9cf611124194bb40888c.jpg",
+      image: "https://i.pinimg.com/236x/0a/af/17/0aaf1746da240b4802844b77705aa1d7.jpg,
       path: "/tippage"
     },
     {
       id: 4,
       title: "Trending Games",
-      image: "https://img.freepik.com/premium-photo/online-casino-casino-online-poker-poker-dice-chips-tokens-roulette-online-gambling-azart-games_980736-2106.jpg?w=360",
+      image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIV6qQ3V3iBCfwFv_OWqEOf-nwVHbdtPIj8RBztNHYJXjd7CJU",
       path: "/trending-games"
     }
   ];
