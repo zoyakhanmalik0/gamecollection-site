@@ -22,7 +22,7 @@ const PattiGuideArticle = () => {
                         {/* Hero Image */}
                         <div className="mb-8">
                             <img
-                                src="https://www.barlarlardown.online/images/post-img-3.jpg"
+                                src="https://www.edarabia.com/wp-content/uploads/2019/01/award-supporting-teaching-learning-238627.jpg"
                                 alt="People collaborating with tablet"
                                 className="w-full max-w-2xl mx-auto rounded-lg shadow-md"
                             />
