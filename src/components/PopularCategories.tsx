@@ -8,25 +8,25 @@ const PopularCategories = () => {
     {
       id: 1,
       title: "Game Guides",
-      image: "https://i.imgur.com/8eJp1Aa.jpg", // New relevant image
+      image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnhPitCAzkhfGxqJWocgBm5-WduWtQ8fOUWZmNIoxXF4lKXwOp", // New relevant image
       path: "/game-guides"
     },
     {
       id: 2,
       title: "Game Reviews",
-      image: "https://i.imgur.com/NyffWci.jpg", // New relevant image
+      image: "https://cdn.thedailymash.co.uk/wp-content/uploads/20190809100812/cards.jpg", // New relevant image
       path: "/GameReviewpage"
     },
     {
       id: 3,
       title: "Tips & Tricks",
-      image: "https://i.imgur.com/6TgkeKN.jpg", // New relevant image
+      image: "https://i.ytimg.com/vi/SGgFQLpmANc/mqdefault.jpg", // New relevant image
       path: "/tippage"
     },
     {
       id: 4,
       title: "Trending Games",
-      image: "https://i.imgur.com/ikqk1g3.jpg", // New relevant image
+      image: "https://img.freepik.com/premium-photo/3d-illustration-with-dynamic-casino-game-background-craps-roulette-poker-cards_972667-7899.jpg", // New relevant image
       path: "/trending-games"
     }
   ];
