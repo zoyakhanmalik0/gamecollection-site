@@ -34,7 +34,7 @@ const LatestPosts = () => {
       title: "Ultimate Guide to Digital Card Games - Which is Best for Game Night!",
       description: "Find the perfect card game for your next game night with our detailed comparison and reviews.",
       date: "December 3, 2023",
-      image: "https://www.barlarlardown.online/images/post-img-4.jpg",
+      image: "https://chronicleillinois.com/wp-content/uploads/2024/06/WOODFORD-061924-Eureka-Public-Library-notes-PHOTO-1-300x201.jpeg",
       link: "/guides/flying-chess-vs-ludo",
     },
     {
@@ -42,7 +42,7 @@ const LatestPosts = () => {
       title: "How AI is Changing the Way We Play Games in 2024",
       description: "Explore how artificial intelligence is revolutionizing the gaming industry and player experiences.",
       date: "December 1, 2023",
-      image: "https://www.barlarlardown.online/images/post-img-5.jpg",
+      image: "https://img.freepik.com/premium-photo/close-up-man-hand-pointing-hologram_670147-28670.jpg",
       link: "/guides/ai-in-gaming",
     },
   ];
