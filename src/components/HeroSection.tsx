@@ -5,47 +5,47 @@ const DownloadPage = () => {
   const buttons = [
     {
       label: 'Download 3Patti DragonTigerClub',
-      href: 'https://3pattirs.net/?from_gameid=5801295&channelCode=100000',
+      href: 'https://3pattirs.net/?from_gameid=5806525&channelCode=100000',
     },
     {
       label: 'Download 3 Patti Teen Official',
-      href: 'https://3pattiteen.com/?from_gameid=8301269&channelCode=100000',
+      href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000',
     },
     {
       label: 'Download Official Flying Chess',
-      href: 'https://flyingchess.com/?from_gameid=8301269&channelCode=100000',
+      href: 'https://flyingchess.com/?from_gameid=8307610&channelCode=100000',
     },
     {
       label: 'Download Teen Patti No 1',
-      href: 'https://dragontigerclub.com/?from_gameid=5801295&channelCode=100000',
+      href: 'https://dragontigerclub.com/?from_gameid=5806525&channelCode=100000',
     },
     {
       label: 'Download 3 Patti Gold',
-      href: 'https://3pattiteen.com/?from_gameid=8301269&channelCode=100000',
+      href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000',
     },
     {
       label: 'Download 3 Patti Blue',
-      href: 'https://3pattirs.net/?from_gameid=5801295&channelCode=100000',
+      href: 'https://3pattirs.net/?from_gameid=5806525&channelCode=100000',
     },
     {
       label: 'Download 3 Patti Crown',
-      href: 'https://3pattiteen.com/?from_gameid=8301269&channelCode=100000',
+      href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000',
     },
     {
       label: 'Download 3 Patti Gold',
-      href: 'https://3pattirs.net/?from_gameid=5801295&channelCode=100000',
+      href: 'https://3pattirs.net/?from_gameid=5806525&channelCode=100000',
     },
     {
       label: 'Download 3 Patti Boss',
-      href: 'https://3pattiteen.com/?from_gameid=8301269&channelCode=100000',
+      href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000',
     },
     {
       label: 'Download 3 Patti Loot',
-      href: 'https://3pattirs.net/?from_gameid=5801295&channelCode=100000',
+      href: 'https://3pattirs.net/?from_gameid=5806525&channelCode=100000',
     },
     {
       label: 'Download 3 Patti Lucky',
-      href: 'https://3pattiteen.com/?from_gameid=8301269&channelCode=100000',
+      href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000',
     },
   ];
 
