@@ -64,14 +64,16 @@ const WelcomeSection = () => {
           </div>
         </div>
 
-        {/* Right Image Section */}
-        <div className="flex items-center justify-center">
-          <img
-            src="https://d2al04l58v9bun.cloudfront.net/blog/wp-content/uploads/2022/12/12113509/tarot-cards-1.jpg"
-            alt="Gaming Content"
-            className="rounded-lg shadow-xl object-cover w-full h-full max-h-[500px] md:min-h-[500px]"
-          />
-        </div>
+       {/* Right Image Section */}
+<div className="flex items-center justify-center h-full">
+  <img
+    src="https://d2al04l58v9bun.cloudfront.net/blog/wp-content/uploads/2022/12/12113509/tarot-cards-1.jpg"
+    alt="Gaming Content"
+    className="rounded-lg shadow-xl object-cover w-full h-full"
+    style={{ minHeight: '100%', maxHeight: '100%' }}
+  />
+</div>
+
       </div>
     </div>
   );
