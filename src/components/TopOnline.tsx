@@ -21,7 +21,7 @@ function App() {
                         <div className="mb-6 sm:mb-8">
                             <div className="w-full max-w-2xl mx-auto aspect-[16/9]">
                                 <img
-                                    src="https://www.barlarlardown.online/images/post-img-1.jpg"
+                                    src="https://www.shutterstock.com/image-photo/asian-young-esport-male-gamer-260nw-2461313897.jpg"
                                     alt="Gamer playing mobile games"
                                     className="w-full h-full object-cover rounded-lg shadow-md"
                                 />
