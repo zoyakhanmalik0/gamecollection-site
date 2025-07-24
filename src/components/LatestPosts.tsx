@@ -26,7 +26,7 @@ const LatestPosts = () => {
       title: "Best Strategy Games: Track Favorites Rule",
       description: "Explore the top strategy games that will challenge your mind and provide hours of entertainment.",
       date: "December 5, 2023",
-      image: "https://www.barlarlardown.online/images/post-img-3.jpg",
+      image: "https://www.edarabia.com/wp-content/uploads/2019/01/award-supporting-teaching-learning-238627.jpg",
       link: "/guides/best-strategy-games",
     },
     {
