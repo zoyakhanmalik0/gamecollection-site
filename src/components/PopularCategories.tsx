@@ -8,7 +8,7 @@ const PopularCategories = () => {
     {
       id: 1,
       title: "Game Guides",
-      image: "https://static.vecteezy.com/system/resources/previews/023/438/099/non_2x/group-of-asian-friends-playing-card-games-for-fun-in-a-hostel-during-their-free-time-while-traveling-together-soft-and-selective-focus-photo.jpg",
+      image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqMI0nmSJc6vtRTXnGuhOR_VADPHrJ1zVcpImPJDxFdcBwQ-6P",
       path: "/game-guides"
     },
     {
@@ -26,7 +26,7 @@ const PopularCategories = () => {
     {
       id: 4,
       title: "Trending Games",
-      image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIV6qQ3V3iBCfwFv_OWqEOf-nwVHbdtPIj8RBztNHYJXjd7CJU",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRoyrIPc6va8xy2Dgt4mOEvmdjc_73HtEPmXhgCa7uRHW-mEn",
       path: "/trending-games"
     }
   ];
