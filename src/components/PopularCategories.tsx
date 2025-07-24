@@ -14,7 +14,7 @@ const PopularCategories = () => {
     {
       id: 2,
       title: "Game Reviews",
-      image: "https://images.pexels.com/videos/6813811/pexels-photo-6813811.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgzFWlc4KRdqiVDaLJLFOf5yjfpiZrYUuAM9VEIha3ZkrKsbw2",
       path: "/GameReviewpage"
     },
     {
@@ -26,7 +26,7 @@ const PopularCategories = () => {
     {
       id: 4,
       title: "Trending Games",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRoyrIPc6va8xy2Dgt4mOEvmdjc_73HtEPmXhgCa7uRHW-mEn",
+      image: "https://media.licdn.com/dms/image/v2/D4D12AQF7-z-yzv-EhA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1732024202803?e=2147483647&v=beta&t=-Q_qTeR3kAAinf1ehRhNDjYQ1DK9fqjEQWTN0MOfQ5k",
       path: "/trending-games"
     }
   ];
