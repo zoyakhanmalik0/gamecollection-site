@@ -10,7 +10,7 @@ const LatestPosts = () => {
       title: "Top Online Mobile Games in Pakistan",
       description: "Discover the most popular mobile games that are taking Pakistan by storm. Complete guide and reviews.",
       date: "December 10, 2023",
-      image: "https://img.freepik.com/premium-photo/young-asian-pretty-woman-pro-gamer-have-live-streaming-singing-chatting-with-her-fans-home_33799-19630.jpg",
+      image: "https://elements-resized.envatousercontent.com/elements-video-cover-images/4d1ca4d6-04c7-4c7a-884d-0de7c89bcfbc/video_preview/video_preview_0000.jpg?w=500&cf_fit=cover&q=85&format=auto&s=964f87e9e0c75dd57c1d045828f96c2079d624b6b9ff71a9ec04d4876237d0d9",
       link: "/guides/top-online-mobile-games",
     },
     {
