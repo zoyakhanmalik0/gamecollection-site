@@ -9,13 +9,13 @@ const GameGuides = () => {
             id: 'how-to-play-111-patti',
             title: 'How to Play 111 Patti for Beginners - Complete Rules Explained',
             excerpt: '111 Patti (also known as Teen Patti) is a popular card game that\'s easy to learn and fun to play...',
-            image: 'https://www.barlarlardown.online/images/post-img-2.jpg'
+            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzpKLWXs4U_kNstKgNR7a3imy8ZrN2KSxRgOX0I_nDRDV4nly6kSsKzZqiuMx3wZRW-JE&usqp=CAU'
         },
         {
             id: 'flying-chess-vs-ludo',
             title: 'Flying Chess vs. Ludo vs. Snakes & Ladders - Which is Best for Game Night?',
             excerpt: 'When it comes to family game nights or friendly get-togethers, nothing beats the charm of classic board games...',
-            image: 'https://www.barlarlardown.online/images/post-img-4.jpg'
+            image: 'https://chronicleillinois.com/wp-content/uploads/2024/06/WOODFORD-061924-Eureka-Public-Library-notes-PHOTO-1-300x201.jpeg'
         }
     ];
 
