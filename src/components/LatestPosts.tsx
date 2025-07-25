@@ -42,7 +42,7 @@ const LatestPosts = () => {
       title: "How AI is Changing the Way We Play Games in 2024",
       description: "Explore how artificial intelligence is revolutionizing the gaming industry and player experiences.",
       date: "December 1, 2023",
-      image: "https://img.freepik.com/premium-photo/close-up-man-hand-pointing-hologram_670147-28670.jpg",
+      image: "https://media.assettype.com/gulfnews/2025-07-10/1tvaz83t/AI-Abu-Dhabi.jpg?w=320&auto=format,compress&fit=max",
       link: "/guides/ai-in-gaming",
     },
   ];
