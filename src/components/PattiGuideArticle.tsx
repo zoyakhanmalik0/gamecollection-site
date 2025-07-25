@@ -18,7 +18,7 @@ const PattiGuideArticle = () => {
 
                     <div className="flex justify-center mb-6 sm:mb-8">
                         <img
-                            src="https://www.barlarlardown.online/images/post-img-2.jpg"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzpKLWXs4U_kNstKgNR7a3imy8ZrN2KSxRgOX0I_nDRDV4nly6kSsKzZqiuMx3wZRW-JE&usqp=CAU"
                             alt="111 Patti Card Game"
                             className="w-full max-w-3xl h-auto object-cover rounded-lg shadow"
                         />
