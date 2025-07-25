@@ -52,7 +52,7 @@ const AIInGamingArticle: React.FC<AIInGamingArticleProps> = ({ onBack }) => {
 
                         <div className="mb-8">
                             <img
-                                src="https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                                src="https://media.assettype.com/gulfnews/2025-07-10/1tvaz83t/AI-Abu-Dhabi.jpg?w=320&auto=format,compress&fit=max"
                                 alt="AI Technology in Gaming"
                                 className="w-full max-w-2xl mx-auto rounded-lg shadow-md"
                             />
