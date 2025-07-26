@@ -8,6 +8,8 @@ import WelcomeSection from './components/WelcomeSection';
 import PopularCategories from './components/PopularCategories';
 import LatestPosts from './components/LatestPosts';
 import Footer from './components/Footer';
+import PrivacyPolicy from './components/policy';
+
 
 // Pages and Articles
 import ArticlePage from './pages/ArticlePage';
@@ -67,6 +69,7 @@ function App() {
         <Route path="/GameReviewpage" element={<Review />} />
         <Route path="/trending-games" element={<Trending />} />
         <Route path="/game-guides" element={<GameGuides />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
         {/* Article Detail Pages */}
         <Route path="/article/:id" element={<ArticlePage />} />
