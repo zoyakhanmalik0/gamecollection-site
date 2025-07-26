@@ -8,7 +8,7 @@ import WelcomeSection from './components/WelcomeSection';
 import PopularCategories from './components/PopularCategories';
 import LatestPosts from './components/LatestPosts';
 import Footer from './components/Footer';
-import PrivacyPolicy from './pages/PrivacyPolicy';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 // Pages and Articles
 import ArticlePage from './pages/ArticlePage';
