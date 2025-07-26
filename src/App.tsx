@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Core Components
+// Components
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import WelcomeSection from './components/WelcomeSection';
@@ -10,7 +10,7 @@ import LatestPosts from './components/LatestPosts';
 import Footer from './components/Footer';
 import PrivacyPolicy from './components/PrivacyPolicy';
 
-// Pages and Articles
+// Pages
 import ArticlePage from './pages/ArticlePage';
 import ContactForm from './components/ContactForm';
 import About from './components/About';
@@ -40,20 +40,18 @@ const HomePage = () => {
   );
 };
 
-// 404 Not Found Component
-const NotFound = () => {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-amber-50 to-orange-50">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">404 - Page Not Found</h1>
-        <p className="text-gray-600 mb-4">The page you're looking for doesn't exist.</p>
-        <a href="/" className="text-blue-600 font-medium hover:underline">Go back to Home</a>
-      </div>
+// 404 Not Found
+const NotFound = () => (
+  <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-amber-50 to-orange-50">
+    <div className="text-center">
+      <h1 className="text-4xl font-bold text-gray-800 mb-4">404 - Page Not Found</h1>
+      <p className="text-gray-600 mb-4">The page you're looking for doesn't exist.</p>
+      <a href="/" className="text-blue-600 font-medium hover:underline">Go back to Home</a>
     </div>
-  );
-};
+  </div>
+);
 
-// Main App Component
+// Main App
 function App() {
   return (
     <Router>
@@ -61,27 +59,22 @@ function App() {
         {/* Homepage */}
         <Route path="/" element={<HomePage />} />
 
-        {/* General Pages */}
+        {/* Static Pages */}
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/tippage" element={<Tip />} />
-        <Route path="/GameReviewpage" element={<Review />} />
+        <Route path="/GameReviewPage" element={<Review />} />
         <Route path="/trending-games" element={<Trending />} />
         <Route path="/game-guides" element={<GameGuides />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
-        {/* Article Detail Pages */}
+        {/* Article Pages */}
         <Route path="/article/:id" element={<ArticlePage />} />
-        <Route
-          path="/guides/ai-in-gaming"
-          element={<AIInGamingArticle onBack={() => window.history.back()} />}
-        />
-
-        {/* Custom Guide Articles */}
+        <Route path="/guides/ai-in-gaming" element={<AIInGamingArticle onBack={() => window.history.back()} />} />
         <Route path="/guides/how-to-play-111-patti" element={<Article1 />} />
         <Route path="/guides/flying-chess-vs-ludo" element={<Article2 />} />
         <Route path="/guides/top-online-mobile-games" element={<TopOnline />} />
-        <Route path="/guides/best-strategy-games" element={<BestStrategy />} /> {/* ✅ New route */}
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/guides/best-strategy-games" element={<BestStrategy />} />
 
         {/* Fallback Route */}
         <Route path="*" element={<NotFound />} />
