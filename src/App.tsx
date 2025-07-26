@@ -8,6 +8,7 @@ import WelcomeSection from './components/WelcomeSection';
 import PopularCategories from './components/PopularCategories';
 import LatestPosts from './components/LatestPosts';
 import Footer from './components/Footer';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 // Pages and Articles
 import ArticlePage from './pages/ArticlePage';
@@ -80,6 +81,7 @@ function App() {
         <Route path="/guides/flying-chess-vs-ludo" element={<Article2 />} />
         <Route path="/guides/top-online-mobile-games" element={<TopOnline />} />
         <Route path="/guides/best-strategy-games" element={<BestStrategy />} /> {/* ✅ New route */}
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
         {/* Fallback Route */}
         <Route path="*" element={<NotFound />} />
