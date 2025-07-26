@@ -1,5 +1,3 @@
-// ✅ Responsive ContactForm.tsx (Logic unchanged)
-
 import React, { useState } from 'react';
 import { CheckCircle, User, Mail, Phone, MessageSquare } from 'lucide-react';
 import Header from './Header';
@@ -67,7 +65,7 @@ const ContactForm = () => {
         if (!validateForm()) return;
 
         setIsSubmitting(true);
-        await new Promise((resolve) => setTimeout(resolve, 1500));
+        await new Promise((resolve) => setTimeout(resolve, 1500)); // ✅ simulate API call
         setIsSubmitting(false);
         setIsSubmitted(true);
     };
@@ -118,7 +116,8 @@ const ContactForm = () => {
                     </div>
                     <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
                         <form onSubmit={handleSubmit} className="space-y-6">
-                            {/* Name */}
+
+                            {/* ✅ Name */}
                             <div>
                                 <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
                                     <User className="inline w-4 h-4 mr-1" />
@@ -137,7 +136,7 @@ const ContactForm = () => {
                                 {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
                             </div>
 
-                            {/* Email */}
+                            {/* ✅ Email */}
                             <div>
                                 <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
                                     <Mail className="inline w-4 h-4 mr-1" />
@@ -156,7 +155,7 @@ const ContactForm = () => {
                                 {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
                             </div>
 
-                            {/* Phone */}
+                            {/* ✅ Phone */}
                             <div>
                                 <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
                                     <Phone className="inline w-4 h-4 mr-1" />
@@ -175,7 +174,7 @@ const ContactForm = () => {
                                 {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
                             </div>
 
-                            {/* Subject */}
+                            {/* ✅ Subject */}
                             <div>
                                 <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
                                     Subject *
@@ -200,7 +199,7 @@ const ContactForm = () => {
                                 {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject}</p>}
                             </div>
 
-                            {/* Message */}
+                            {/* ✅ Message */}
                             <div>
                                 <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
                                     <MessageSquare className="inline w-4 h-4 mr-1" />
@@ -220,7 +219,7 @@ const ContactForm = () => {
                                 <p className="text-gray-500 text-xs mt-1">Minimum 10 characters required</p>
                             </div>
 
-                            {/* Submit */}
+                            {/* ✅ Submit */}
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
@@ -248,3 +247,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
