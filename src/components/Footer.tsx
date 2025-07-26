@@ -13,6 +13,7 @@ const Footer = () => {
             <a href="/tippage" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Tips & Tricks</a>
             <a href="/about" className="text-gray-600 hover:text-red-600 transition-colors text-sm">About</a>
             <a href="/contact" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Contact</a>
+            <a href="/privacy-policy" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Privacy Policy</a> {/* <-- New link */}
           </nav>
         </div>
 
