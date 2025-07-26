@@ -79,7 +79,7 @@ function App() {
         />
 
         {/* Custom Guide Articles */}
-        <Route path="/guides/how-to-play-111-patti" element={<Article1 />} />
+        <Route path="/guides/strategy-card-basics" element={<Article1 />} />
         <Route path="/guides/flying-chess-vs-ludo" element={<Article2 />} />
         <Route path="/guides/top-online-mobile-games" element={<TopOnline />} />
         <Route path="/guides/best-strategy-games" element={<BestStrategy />} /> {/* ✅ New route */}
