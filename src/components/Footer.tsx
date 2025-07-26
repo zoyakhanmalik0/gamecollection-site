@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -8,12 +9,12 @@ const Footer = () => {
         {/* Footer Navigation */}
         <div className="flex justify-center mb-8">
           <nav className="flex flex-wrap justify-center gap-4 sm:gap-8">
-            <a href="/game-guides" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Guides</a>
-            <a href="/GameReviewPage" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Reviews</a>
-            <a href="/tippage" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Tips & Tricks</a>
-            <a href="/about" className="text-gray-600 hover:text-red-600 transition-colors text-sm">About</a>
-            <a href="/contact" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Contact</a>
-            <a href="/privacy-policy" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Privacy Policy</a> {/* <-- New link */}
+            <Link to="/game-guides" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Guides</Link>
+            <Link to="/GameReviewPage" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Reviews</Link>
+            <Link to="/tippage" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Tips & Tricks</Link>
+            <Link to="/about" className="text-gray-600 hover:text-red-600 transition-colors text-sm">About</Link>
+            <Link to="/contact" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Contact</Link>
+            <Link to="/privacy-policy" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Privacy Policy</Link>
           </nav>
         </div>
 
