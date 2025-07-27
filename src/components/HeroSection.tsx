@@ -37,15 +37,6 @@ const DownloadPage: React.FC = () => {
         />
       </div>
 
-      {/* ✅ Top Game Preview Image */}
-      <div className="w-full max-w-2xl mb-8">
-        <img
-          src="https://apkfbi.com/wp-content/uploads/2025/03/1-1.webp"
-          alt="Game Preview"
-          className="w-full h-auto rounded-lg shadow-xl"
-        />
-      </div>
-
       {/* ✅ First 4 Buttons */}
       <div className="w-full max-w-md space-y-4 mb-10">
         {buttons.slice(0, 4).map(({ label, href }, index) => (
@@ -60,15 +51,6 @@ const DownloadPage: React.FC = () => {
             {label}
           </a>
         ))}
-      </div>
-
-      {/* ✅ Game Promo Image */}
-      <div className="w-full max-w-3xl mb-6 mx-auto">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:1280/1*1cPINnY3SbqkqC4TLAL43g.jpeg"
-          alt="3 Patti Promotion"
-          className="w-full h-auto rounded-xl shadow-lg"
-        />
       </div>
 
       {/* ✅ Urdu Note Instruction Image */}
@@ -94,15 +76,6 @@ const DownloadPage: React.FC = () => {
             {label}
           </a>
         ))}
-      </div>
-
-      {/* ✅ Final Game Bonus Image */}
-      <div className="w-full max-w-2xl mb-6 mx-auto">
-        <img
-          src="https://miro.medium.com/v2/resize:fit:694/1*O3xsvJ5O5t22A0v6IyE2Ag.jpeg"
-          alt="Game Bonus Poster"
-          className="w-full h-auto rounded-xl shadow-xl"
-        />
       </div>
 
       {/* ✅ Urdu Invite & Share Image */}
