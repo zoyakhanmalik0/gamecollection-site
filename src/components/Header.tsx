@@ -27,10 +27,10 @@ const Header = () => {
             <Link to="/game-guides" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
               Game Tutorials
             </Link>
-            <Link to="/GameReviewPage" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
+            <Link to="/reviews" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
               Game Opinions
             </Link>
-            <Link to="/tippage" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
+            <Link to="/tips" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
               Hints & Tips
             </Link>
             <Link to="/about" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
