@@ -3,13 +3,14 @@ import Header from './Header';
 import Footer from './Footer';
 
 const GameReviewsPage: React.FC = () => {
-  // ✅ useState hook with string type
+  // ✅ State for managing search term
   const [searchTerm, setSearchTerm] = useState<string>('');
 
-  // ✅ Form submission handler with proper TypeScript type
+  // ✅ Handle form submission
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('Searching for:', searchTerm);
+    // You can later add filtering logic here
   };
 
   return (
@@ -20,14 +21,13 @@ const GameReviewsPage: React.FC = () => {
       {/* Main Content */}
       <main className="py-12 flex-grow">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* White Box Container with Responsive Padding */}
           <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 md:p-10 text-center min-h-[400px] sm:min-h-[500px] flex flex-col justify-center">
             {/* Page Title */}
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 sm:mb-6">
               Game Reviews
             </h1>
 
-            {/* Search Message */}
+            {/* Message */}
             <p className="text-gray-600 text-base sm:text-lg mb-6 sm:mb-10">
               It seems we can't find what you're looking for. Perhaps searching can help.
             </p>
