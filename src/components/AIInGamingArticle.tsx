@@ -2,174 +2,141 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import { useNavigate } from 'react-router-dom';
-import { Calendar, User, Clock, ArrowLeft } from 'lucide-react';
+import { Calendar, User, Clock, ArrowLeft, Sparkles, Bot, Brain, Cpu } from 'lucide-react';
 
-type AIInGamingArticleProps = {
-    onBack: () => void;
-};
-
-const AIInGamingArticle: React.FC<AIInGamingArticleProps> = ({ onBack }) => {
+const AIInGamingArticle: React.FC<{ onBack: () => void }> = ({ onBack }) => {
     const navigate = useNavigate();
 
+    const sections = [
+        {
+            title: "Smarter NPCs with Real Emotions",
+            body: "AI-driven characters no longer just follow scripts—they respond emotionally, adapt tactically, and even remember your past decisions.",
+            icon: <Bot className="text-orange-500 w-5 h-5" />,
+            features: [
+                "Dynamic memory of past player interactions",
+                "Emotional expressions and evolving dialogue",
+                "Real-time behavior adjustments"
+            ]
+        },
+        {
+            title: "Procedural Worlds You Can Get Lost In",
+            body: "AI now crafts endless unique landscapes and missions, offering an exploration experience that feels handcrafted every time.",
+            icon: <Cpu className="text-orange-500 w-5 h-5" />,
+            features: [
+                "Endless world generation with logical structure",
+                "Smarter side quests and dynamic lore",
+                "Replay value skyrockets"
+            ]
+        },
+        {
+            title: "Hyper-Personalized Game Experiences",
+            body: "From difficulty to story branching, AI ensures your gameplay feels tailor-made just for you.",
+            icon: <Brain className="text-orange-500 w-5 h-5" />,
+            features: [
+                "Real-time difficulty balancing",
+                "Customized challenges and environments",
+                "Storylines based on your decisions"
+            ]
+        },
+        {
+            title: "AI Tools Empowering Game Developers",
+            body: "Behind the scenes, AI accelerates game creation with intelligent testing, asset design, and even voice acting.",
+            icon: <Sparkles className="text-orange-500 w-5 h-5" />,
+            features: [
+                "AI-generated 3D models and textures",
+                "Smart testing with bug detection",
+                "Faster development cycles"
+            ]
+        }
+    ];
+
     return (
-        <div className="min-h-screen bg-orange-50 flex flex-col">
+        <div className="min-h-screen bg-gradient-to-b from-orange-50 via-white to-orange-100 flex flex-col">
             <Header />
-
-            <div className="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
-                <section className="bg-white p-6 sm:p-8 md:p-10 rounded-xl shadow-md">
-
+            <main className="flex-grow max-w-4xl mx-auto px-6 py-10">
+                <section className="bg-white p-8 rounded-2xl shadow-xl">
                     {/* Back Button */}
-                    <div className="mb-6">
-                        <button
-                            onClick={onBack}
-                            className="flex items-center text-orange-600 hover:text-orange-800 font-medium transition"
-                        >
-                            <ArrowLeft className="w-4 h-4 mr-2" />
-                            Back
-                        </button>
-                    </div>
+                    <button onClick={onBack} className="mb-6 flex items-center text-orange-600 hover:text-orange-800 font-medium">
+                        <ArrowLeft className="w-5 h-5 mr-2" />
+                        Back to Articles
+                    </button>
 
-                    {/* Article Header */}
-                    <div className="text-center mb-10 sm:mb-12">
-                        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 sm:mb-8">
-                            How AI Is Changing the Way We Play Games in 2025
+                    {/* Header */}
+                    <div className="text-center mb-10">
+                        <h1 className="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+                            The AI Revolution in Gaming (2025 & Beyond)
                         </h1>
-
-                        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-gray-600 text-sm mb-6">
-                            <div className="flex items-center">
-                                <Calendar className="w-4 h-4 mr-2" />
-                                January 15, 2025
-                            </div>
-                            <div className="flex items-center">
-                                <User className="w-4 h-4 mr-2" />
-                                Gaming Expert
-                            </div>
-                            <div className="flex items-center">
-                                <Clock className="w-4 h-4 mr-2" />
-                                5 min read
-                            </div>
+                        <div className="flex justify-center space-x-6 text-gray-500 text-sm mt-2">
+                            <span className="flex items-center"><Calendar className="w-4 h-4 mr-1" /> July 27, 2025</span>
+                            <span className="flex items-center"><User className="w-4 h-4 mr-1" /> Game Insights Team</span>
+                            <span className="flex items-center"><Clock className="w-4 h-4 mr-1" /> 6 min read</span>
                         </div>
-
-                        <div className="mb-8">
-                            <img
-                                src="https://media.assettype.com/gulfnews/2025-07-10/1tvaz83t/AI-Abu-Dhabi.jpg?w=320&auto=format,compress&fit=max"
-                                alt="AI Technology in Gaming"
-                                className="w-full max-w-2xl mx-auto rounded-lg shadow-md"
-                            />
-                        </div>
-
-                        <div className="text-left max-w-3xl mx-auto">
-                            <p className="text-base sm:text-lg text-gray-600 font-medium mb-6">
-                                Artificial Intelligence is revolutionizing the gaming industry in unprecedented ways. From intelligent NPCs to procedural content generation, AI is creating more immersive and personalized gaming experiences than ever before.
-                            </p>
-                        </div>
+                        <img
+                            src="https://media.assettype.com/gulfnews/2025-07-10/1tvaz83t/AI-Abu-Dhabi.jpg?w=600"
+                            alt="AI Gaming"
+                            className="rounded-xl shadow-lg mt-8 w-full max-w-2xl mx-auto"
+                        />
                     </div>
 
-                    {/* Article Sections */}
-                    {[
-                        {
-                            title: "The Rise of Intelligent NPCs",
-                            body: "Gone are the days of predictable non-player characters following scripted patterns. Modern AI-powered NPCs can adapt to player behavior, learn from interactions, and provide unique responses that make each playthrough feel fresh and engaging.",
-                            features: [
-                                "Characters remember past encounters with players",
-                                "NPCs develop relationships and evolve personalities",
-                                "More dynamic and realistic interactions"
-                            ]
-                        },
-                        {
-                            title: "Procedural Content Generation",
-                            body: "AI algorithms are now capable of generating vast, detailed game worlds on the fly. From terrain and architecture to quests and storylines, procedural generation powered by machine learning creates infinite possibilities.",
-                            features: [
-                                "Infinite, unique worlds for exploration",
-                                "Maintained quality and coherence in generated content",
-                                "Reduced development time for expansive games"
-                            ]
-                        },
-                        {
-                            title: "Personalized Gaming Experiences",
-                            body: "Machine learning algorithms analyze player behavior patterns to customize difficulty levels, suggest content, and even modify game mechanics in real-time.",
-                            features: [
-                                "Dynamic difficulty adjustment",
-                                "Tailored content recommendations",
-                                "Adaptive gameplay mechanics"
-                            ]
-                        },
-                        {
-                            title: "Enhanced Game Development",
-                            body: "AI is not just changing how we play games, but also how they're made. Developers are using AI tools for automated testing, bug detection, and asset creation.",
-                            features: [
-                                "Automated testing and bug detection",
-                                "AI-assisted asset creation",
-                                "Streamlined development processes"
-                            ]
-                        }
-                    ].map((section, index) => (
-                        <section key={index} className="mb-10">
-                            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                                {section.title}
+                    {/* Sections */}
+                    {sections.map((sec, idx) => (
+                        <div key={idx} className="mb-10">
+                            <h2 className="text-2xl font-bold text-orange-600 flex items-center mb-4">
+                                {sec.icon}
+                                <span className="ml-2">{sec.title}</span>
                             </h2>
-                            <p className="text-gray-700 leading-relaxed mb-4">{section.body}</p>
-                            <h3 className="text-lg font-semibold text-gray-900 mb-3">Key Benefits:</h3>
-                            <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                                {section.features.map((item, i) => (
-                                    <li key={i}>{item}</li>
+                            <p className="text-gray-700 mb-4">{sec.body}</p>
+                            <ul className="list-disc list-inside space-y-2 text-gray-700 pl-4">
+                                {sec.features.map((feature, i) => (
+                                    <li key={i}>{feature}</li>
                                 ))}
                             </ul>
-                        </section>
+                        </div>
                     ))}
 
-                    {/* Key Takeaway */}
-                    <div className="bg-orange-50 border-l-4 border-orange-500 p-6 my-8 rounded-lg">
-                        <h3 className="text-lg font-semibold text-gray-800 mb-2">Key Takeaway</h3>
+                    {/* Quote Box */}
+                    <div className="bg-orange-100 p-6 rounded-xl border-l-4 border-orange-500 shadow-sm my-10">
+                        <h3 className="text-lg font-bold text-orange-800 mb-2">Takeaway</h3>
                         <p className="text-gray-700">
-                            AI is transforming gaming from a static entertainment medium into a dynamic, personalized experience that adapts and evolves with each player. The future of gaming is intelligent, responsive, and more immersive than ever before.
+                            AI isn’t just a tool — it’s a revolution. It’s turning games into living worlds where players shape stories as much as they play them.
                         </p>
                     </div>
 
-                    {/* Future Outlook */}
-                    <section className="mb-10">
-                        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                            The Future of AI in Gaming
-                        </h2>
-                        <p className="text-gray-700 leading-relaxed mb-4">
-                            As we look ahead to 2025 and beyond, we can expect even more sophisticated AI integration. Virtual reality experiences will become more realistic with AI-powered physics and interactions.
+                    {/* Future Section */}
+                    <div className="mb-10">
+                        <h2 className="text-2xl font-bold text-orange-600 mb-4">What’s Next?</h2>
+                        <p className="text-gray-700 mb-4">
+                            In the coming years, AI will integrate deeper into virtual worlds. Expect voice-controlled NPCs, real-time physics, and hyper-realistic simulations.
                         </p>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-3">Upcoming Innovations:</h3>
-                        <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                            <li>AI-powered VR physics and interactions</li>
-                            <li>Cloud gaming optimization through AI</li>
-                            <li>Reduced latency in online gaming</li>
-                            <li>More realistic and responsive game worlds</li>
+                        <ul className="list-disc list-inside text-gray-700 pl-4 space-y-2">
+                            <li>Cloud-accelerated AI rendering</li>
+                            <li>Seamless cross-platform AI syncing</li>
+                            <li>AI-built immersive story worlds</li>
                         </ul>
-                    </section>
+                    </div>
 
                     {/* Final Thoughts */}
-                    <section className="mb-12">
-                        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                            Final Thoughts
-                        </h2>
-                        <p className="text-gray-700 leading-relaxed">
-                            The integration of AI in gaming represents one of the most exciting technological advances in the entertainment industry. As these technologies continue to evolve, we can expect games to become even more intelligent, engaging, and personalized, creating experiences that were once thought impossible.
+                    <div className="mb-8">
+                        <h2 className="text-2xl font-bold text-orange-600 mb-4">Final Thoughts</h2>
+                        <p className="text-gray-700">
+                            AI is no longer futuristic—it's the new foundation of gaming. And as it continues to evolve, the boundaries between reality and imagination will blur in exciting, unimaginable ways.
                         </p>
-                    </section>
-
-                    {/* Tags */}
-                    <div className="text-sm text-gray-600 mb-8">
-                        Tags: AI, Gaming, Technology, 2025, Innovation
                     </div>
 
-                    {/* Navigation Button */}
-                    <div className="flex justify-between items-center mt-8">
+                    {/* Tags */}
+                    <div className="text-sm text-gray-500">Tags: AI, Gaming, GameDev, Future, 2025</div>
+
+                    {/* Navigation */}
+                    <div className="flex justify-between items-center mt-10">
                         <button
                             onClick={() => navigate('/guides/flying-chess-vs-ludo')}
-                            className="text-orange-500 hover:text-orange-600 transition-colors text-base font-semibold"
+                            className="text-orange-500 hover:text-orange-600 transition font-semibold"
                         >
                             ← Previous Post
                         </button>
                     </div>
                 </section>
-            </div>
-
+            </main>
             <Footer />
         </div>
     );
