@@ -25,7 +25,7 @@ const Header = () => {
           {/* Navigation Links */}
           <nav className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-8">
             <Link to="/game-guides" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
-              Game Guides
+              Game Guide
             </Link>
             <Link to="/GameReviewPage" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
               Game Reviews
