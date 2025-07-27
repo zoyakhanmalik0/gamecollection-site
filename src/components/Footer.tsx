@@ -5,12 +5,13 @@ const Footer: React.FC = () => {
   const [email, setEmail] = useState<string>('');
 
   const handleSubscribe = () => {
-    if (!email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailRegex.test(email)) {
       alert('Please enter a valid email address.');
       return;
     }
 
-    // Handle newsletter logic (e.g., send to server)
+    // TODO: Replace with actual subscription logic (e.g., API call)
     console.log('Subscribed with email:', email);
     alert('Thanks for subscribing!');
     setEmail('');
@@ -19,7 +20,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-amber-50 border-t border-gray-200 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
+        
         {/* Navigation Links */}
         <div className="flex justify-center mb-8">
           <nav className="flex flex-wrap justify-center gap-4 sm:gap-8">
