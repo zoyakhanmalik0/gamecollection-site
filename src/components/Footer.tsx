@@ -9,8 +9,8 @@ const Footer = () => {
         <div className="flex justify-center mb-8">
           <nav className="flex flex-wrap justify-center gap-4 sm:gap-8">
             <a href="/game-guides" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Tutorials</a>
-            <a href="/GameReviewPage" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Opinions</a>
-            <a href="/tippage" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Hints & Tips</a>
+            <a href="/reviews" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Opinions</a>
+            <a href="/tips" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Hints & Tips</a>
             <a href="/about" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Our Story</a>
             <a href="/contact" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Get in Touch</a>
             <a href="/privacy-policy" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Privacy & Policy</a>
