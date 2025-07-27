@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-amber-50 border-t border-gray-200 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,11 +11,10 @@ const Footer = () => {
           <nav className="flex flex-wrap justify-center gap-4 sm:gap-8">
             {/* ✅ Corrected paths to match standard route naming conventions */}
             <Link to="/game-guides" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Guides</Link>
-            <Link to="/game-reviews" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Reviews</Link> {/* changed from /GameReviewPage to lowercase for consistency */}
-            <Link to="/tips" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Tips & Tricks</Link> {/* changed from /tippage to /tips for clarity */}
+            <Link to="/game-reviews" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Reviews</Link>
+            <Link to="/tips" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Tips & Tricks</Link>
             <Link to="/about" className="text-gray-600 hover:text-red-600 transition-colors text-sm">About</Link>
             <Link to="/contact" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Contact</Link>
-            
           </nav>
         </div>
 
