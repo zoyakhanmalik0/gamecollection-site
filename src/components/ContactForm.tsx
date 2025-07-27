@@ -37,12 +37,12 @@ const ContactForm: React.FC = () => {
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'Email is invalid';
+      newErrors.email = 'Email format is invalid';
     }
     if (!formData.phone.trim()) {
       newErrors.phone = 'Phone number is required';
     } else if (!/^\d{10}$/.test(formData.phone.replace(/\D/g, ''))) {
-      newErrors.phone = 'Phone number must be 10 digits';
+      newErrors.phone = 'Phone must be exactly 10 digits';
     }
     if (!formData.subject.trim()) newErrors.subject = 'Subject is required';
     if (!formData.message.trim()) {
@@ -71,19 +71,13 @@ const ContactForm: React.FC = () => {
     if (!validateForm()) return;
 
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500)); // simulate API
+    await new Promise((res) => setTimeout(res, 1500));
     setIsSubmitting(false);
     setIsSubmitted(true);
   };
 
   const resetForm = () => {
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: '',
-    });
+    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
     setErrors({});
     setIsSubmitted(false);
   };
@@ -93,22 +87,16 @@ const ContactForm: React.FC = () => {
       <div className="min-h-screen bg-gradient-to-br from-orange-50 to-yellow-50 flex flex-col">
         <Header />
         <div className="flex-grow flex items-center justify-center px-4 py-12">
-          <div className="w-full max-w-lg bg-white rounded-2xl shadow-xl p-6 sm:p-8 text-center">
-            <CheckCircle className="w-16 h-16 sm:w-20 sm:h-20 text-green-500 mx-auto mb-4" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">
-              Congratulations!
-            </h2>
-            <p className="text-gray-600 text-base sm:text-lg">
-              Your message has been sent successfully!
-            </p>
-            <div className="bg-green-50 border border-green-200 rounded-lg p-4 mt-6 mb-6">
-              <p className="text-green-800 text-sm">
-                Thank you for reaching out. We'll respond within 24 hours.
-              </p>
+          <div className="w-full max-w-lg bg-white rounded-2xl shadow-lg p-8 text-center">
+            <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
+            <h2 className="text-3xl font-bold text-gray-800 mb-2">Thank You!</h2>
+            <p className="text-gray-600">Your message has been successfully sent.</p>
+            <div className="bg-green-50 border border-green-200 rounded-lg p-4 mt-6">
+              <p className="text-green-700 text-sm">We’ll respond within 24 hours.</p>
             </div>
             <button
               onClick={resetForm}
-              className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
+              className="mt-6 w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
             >
               Send Another Message
             </button>
@@ -122,82 +110,52 @@ const ContactForm: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-yellow-50 flex flex-col">
       <Header />
-      <div className="flex-grow py-8 sm:py-12 px-4 sm:px-6 md:px-8">
+      <main className="flex-grow py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-10 sm:mb-12">
-            <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-3">
-              Get In Touch
-            </h1>
-            <p className="text-base sm:text-xl text-gray-600">
-              We'd love to hear from you. Send us a message and we'll respond as
-              soon as possible.
+          <div className="text-center mb-10">
+            <h1 className="text-4xl font-bold text-gray-800">Contact Us</h1>
+            <p className="text-gray-600 mt-2">
+              Have questions or suggestions? We'd love to hear from you.
             </p>
           </div>
-          <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
+          <div className="bg-white shadow-xl rounded-2xl p-6 sm:p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Full Name */}
-              <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                  <User className="inline w-4 h-4 mr-1" />
-                  Full Name *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 ${
-                    errors.name ? 'border-red-500 bg-red-50' : 'border-gray-300'
-                  }`}
-                  placeholder="Enter your full name"
-                />
-                {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
-              </div>
+              {/* Name */}
+              <InputField
+                icon={<User className="inline w-4 h-4 mr-1" />}
+                label="Full Name"
+                name="name"
+                type="text"
+                value={formData.name}
+                onChange={handleInputChange}
+                error={errors.name}
+              />
 
               {/* Email */}
-              <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                  <Mail className="inline w-4 h-4 mr-1" />
-                  Email Address *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 ${
-                    errors.email ? 'border-red-500 bg-red-50' : 'border-gray-300'
-                  }`}
-                  placeholder="Enter your email"
-                />
-                {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
-              </div>
+              <InputField
+                icon={<Mail className="inline w-4 h-4 mr-1" />}
+                label="Email"
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                error={errors.email}
+              />
 
               {/* Phone */}
-              <div>
-                <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
-                  <Phone className="inline w-4 h-4 mr-1" />
-                  Phone Number *
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 ${
-                    errors.phone ? 'border-red-500 bg-red-50' : 'border-gray-300'
-                  }`}
-                  placeholder="Enter your phone number"
-                />
-                {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
-              </div>
+              <InputField
+                icon={<Phone className="inline w-4 h-4 mr-1" />}
+                label="Phone"
+                name="phone"
+                type="tel"
+                value={formData.phone}
+                onChange={handleInputChange}
+                error={errors.phone}
+              />
 
               {/* Subject */}
               <div>
-                <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
                   Subject *
                 </label>
                 <select
@@ -209,7 +167,7 @@ const ContactForm: React.FC = () => {
                     errors.subject ? 'border-red-500 bg-red-50' : 'border-gray-300'
                   }`}
                 >
-                  <option value="" disabled hidden>Select a subject</option>
+                  <option value="" hidden disabled>Select subject</option>
                   <option value="general">General Inquiry</option>
                   <option value="game-guide">Game Guide Request</option>
                   <option value="review">Game Review</option>
@@ -223,7 +181,7 @@ const ContactForm: React.FC = () => {
 
               {/* Message */}
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                   <MessageSquare className="inline w-4 h-4 mr-1" />
                   Message *
                 </label>
@@ -233,30 +191,30 @@ const ContactForm: React.FC = () => {
                   rows={5}
                   value={formData.message}
                   onChange={handleInputChange}
+                  placeholder="Write your message here..."
                   className={`w-full px-4 py-3 border rounded-lg resize-none focus:ring-2 focus:ring-orange-500 ${
                     errors.message ? 'border-red-500 bg-red-50' : 'border-gray-300'
                   }`}
-                  placeholder="Enter your message"
                 />
                 {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
-                <p className="text-gray-500 text-xs mt-1">Minimum 10 characters required</p>
+                <p className="text-gray-500 text-xs mt-1">Minimum 10 characters</p>
               </div>
 
               {/* Submit */}
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full py-4 px-6 rounded-lg font-semibold text-white transition-all duration-300 transform hover:scale-105 ${
+                className={`w-full py-4 rounded-lg font-semibold text-white transition-all duration-300 transform hover:scale-105 ${
                   isSubmitting
                     ? 'bg-gray-400 cursor-not-allowed'
                     : 'bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 shadow-lg hover:shadow-xl'
                 }`}
               >
                 {isSubmitting ? (
-                  <div className="flex items-center justify-center">
-                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                    Sending Message...
-                  </div>
+                  <span className="flex items-center justify-center">
+                    <span className="animate-spin h-5 w-5 mr-2 border-2 border-t-transparent border-white rounded-full"></span>
+                    Sending...
+                  </span>
                 ) : (
                   'Send Message'
                 )}
@@ -264,10 +222,50 @@ const ContactForm: React.FC = () => {
             </form>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );
 };
+
+// 🔹 InputField Component for DRY code
+interface InputFieldProps {
+  icon: React.ReactNode;
+  label: string;
+  name: keyof FormData;
+  type: string;
+  value: string;
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+  error?: string;
+}
+
+const InputField: React.FC<InputFieldProps> = ({
+  icon,
+  label,
+  name,
+  type,
+  value,
+  onChange,
+  error,
+}) => (
+  <div>
+    <label htmlFor={name} className="block text-sm font-medium text-gray-700 mb-2">
+      {icon}
+      {label} *
+    </label>
+    <input
+      id={name}
+      name={name}
+      type={type}
+      value={value}
+      onChange={onChange}
+      placeholder={`Enter your ${label.toLowerCase()}`}
+      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 ${
+        error ? 'border-red-500 bg-red-50' : 'border-gray-300'
+      }`}
+    />
+    {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
+  </div>
+);
 
 export default ContactForm;
