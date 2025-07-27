@@ -10,28 +10,28 @@ const Footer: React.FC = () => {
         <div className="flex justify-center mb-8">
           <nav className="flex flex-wrap justify-center gap-4 sm:gap-8">
             {/* ✅ Corrected paths to match standard route naming conventions */}
-            <Link to="/game-guides" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Guides</Link>
-            <Link to="/reviews" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Reviews</Link>
-            <Link to="/tips" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Tips & Tricks</Link>
-            <Link to="/about" className="text-gray-600 hover:text-red-600 transition-colors text-sm">About</Link>
-            <Link to="/contact" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Contact</Link>
-            <Link to="/privacy-policy" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Privacy Policy</Link>
+            <Link to="/game-guides" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Strategy Hub</Link>
+            <Link to="/reviews" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Expert Opinions</Link>
+            <Link to="/tips" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Winning Moves</Link>
+            <Link to="/about" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Our Vision</Link>
+            <Link to="/contact" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Talk to Us</Link>
+            <Link to="/privacy-policy" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Policy & Terms</Link>
           </nav>
         </div>
 
         {/* Newsletter Signup */}
         <div className="text-center mb-8">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-6">
-            Sign up to receive email updates, fresh news and more!
+            Join our newsletter for updates, pro tips & exclusive offers!
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
             <input
               type="email"
-              placeholder="Enter your email"
+              placeholder="Your best email here"
               className="w-full px-4 py-3 border border-gray-300 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 focus:outline-none"
             />
             <button className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-gray-800 px-8 py-3 rounded font-semibold whitespace-nowrap transition-colors">
-              Subscribe
+              Join Now
             </button>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="text-center">
           <p className="text-gray-500 text-sm">
-            Copyright © 2025 <span className="text-orange-600 font-medium">111 Patti Guide</span> | Powered by <span className="text-orange-600 font-medium">11PattiGuide</span>
+            © 2025 <span className="text-orange-600 font-medium">Gaming Wisdom</span> | Crafted by <span className="text-orange-600 font-medium">GameMasterLab</span>
           </p>
         </div>
       </div>
