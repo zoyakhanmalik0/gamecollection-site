@@ -5,7 +5,8 @@ import Footer from './Footer';
 const GameReviewsPage = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
-    const handleSearch = (e: React.FormEvent) => {
+    // ✅ FIXED: Removed TypeScript type annotation (was: e: React.FormEvent)
+    const handleSearch = (e) => {
         e.preventDefault();
         console.log('Searching for:', searchTerm);
     };
