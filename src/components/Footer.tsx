@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <nav className="flex flex-wrap justify-center gap-4 sm:gap-8">
             {/* ✅ Corrected paths to match standard route naming conventions */}
             <Link to="/game-guides" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Guides</Link>
-            <Link to="/game-reviews" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Reviews</Link>
+            <Link to="/reviews" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Reviews</Link>
             <Link to="/tips" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Tips & Tricks</Link>
             <Link to="/about" className="text-gray-600 hover:text-red-600 transition-colors text-sm">About</Link>
             <Link to="/contact" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Contact</Link>
