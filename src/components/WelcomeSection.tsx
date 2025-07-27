@@ -1,7 +1,12 @@
 import React from 'react';
 
+interface Feature {
+  title: string;
+  content: string;
+}
+
 const WelcomeSection: React.FC = () => {
-  const features = [
+  const features: Feature[] = [
     {
       title: 'Easy-to-Follow Game Tutorials:',
       content:
@@ -30,10 +35,10 @@ const WelcomeSection: React.FC = () => {
   ];
 
   return (
-    <div className="bg-white w-full rounded-none shadow-lg overflow-hidden mb-12">
+    <section className="bg-white w-full rounded-none shadow-lg overflow-hidden mb-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 px-4 sm:px-8 md:px-16 py-8 md:py-12">
         
-        {/* ✅ Left Side Text */}
+        {/* Left Side Text */}
         <div className="py-2 sm:py-4">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-2">
             Discover Smarter Gaming for Real Players
@@ -63,19 +68,18 @@ const WelcomeSection: React.FC = () => {
           </div>
         </div>
 
-        {/* ✅ Right Image */}
+        {/* Right Side Image */}
         <div className="flex items-center justify-center h-full">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0wn51C3kn57NzuOAPJ-jblPAjRpc15hUAu77IB7eB54I7zR2m"
-            alt="Board and Card Games"
+            alt="Illustration of board and card gaming"
             className="rounded-lg shadow-xl object-cover w-full h-full"
             style={{ maxHeight: '500px', objectFit: 'cover' }}
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default WelcomeSection;
-
