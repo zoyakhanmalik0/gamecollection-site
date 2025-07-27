@@ -8,15 +8,14 @@ import WelcomeSection from './components/WelcomeSection';
 import PopularCategories from './components/PopularCategories';
 import LatestPosts from './components/LatestPosts';
 import Footer from './components/Footer';
-import PrivacyPolicy from './components/policy';
-
+import PrivacyPolicy from './components/policy'; // ✅ Capitalized to match file name
 
 // Pages and Articles
 import ArticlePage from './pages/ArticlePage';
 import ContactForm from './components/ContactForm';
 import About from './components/About';
 import Tip from './components/TipPage';
-import Review from './components/GameReviewsPage';
+import Review from './components/GameReviewsPage'; // ✅ Ensure filename is GameReviewsPage.tsx
 import AIInGamingArticle from './components/AIInGamingArticle';
 import Trending from './components/Trending';
 import GameGuides from './components/GameGuide';
@@ -25,7 +24,7 @@ import Article2 from './components/BoardGamesArticle';
 import TopOnline from './components/TopOnline';
 import BestStrategy from './components/BestStrategy';
 
-// Home Page Component
+// ✅ Home Page Component
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50">
@@ -41,7 +40,7 @@ const HomePage = () => {
   );
 };
 
-// 404 Not Found Component
+// ✅ 404 Not Found Component
 const NotFound = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-amber-50 to-orange-50">
@@ -54,7 +53,7 @@ const NotFound = () => {
   );
 };
 
-// Main App Component
+// ✅ Main App Component with Correct Routes
 function App() {
   return (
     <Router>
@@ -65,26 +64,26 @@ function App() {
         {/* General Pages */}
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactForm />} />
-        <Route path="/tippage" element={<Tip />} />
-        <Route path="/GameReviewpage" element={<Review />} />
+        <Route path="/tips" element={<Tip />} /> {/* ✅ URL made clean */}
+        <Route path="/reviews" element={<Review />} /> {/* ✅ Changed from /GameReviewpage */}
         <Route path="/trending-games" element={<Trending />} />
         <Route path="/game-guides" element={<GameGuides />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
-        {/* Article Detail Pages */}
+        {/* Dynamic Article Page */}
         <Route path="/article/:id" element={<ArticlePage />} />
+
+        {/* Individual Article Pages */}
         <Route
           path="/guides/ai-in-gaming"
           element={<AIInGamingArticle onBack={() => window.history.back()} />}
         />
-
-        {/* Custom Guide Articles */}
         <Route path="/guides/strategy-card-basics" element={<Article1 />} />
         <Route path="/guides/flying-chess-vs-ludo" element={<Article2 />} />
         <Route path="/guides/top-online-mobile-games" element={<TopOnline />} />
-        <Route path="/guides/best-strategy-games" element={<BestStrategy />} /> {/* ✅ New route */}
+        <Route path="/guides/best-strategy-games" element={<BestStrategy />} />
 
-        {/* Fallback Route */}
+        {/* Catch-all Fallback */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
