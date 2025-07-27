@@ -66,7 +66,7 @@ const WelcomeSection: React.FC = () => {
         {/* ✅ Right Image */}
         <div className="flex items-center justify-center h-full">
           <img
-            src="https://i.ibb.co/gzhyDqG/board-card-game-concept.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0wn51C3kn57NzuOAPJ-jblPAjRpc15hUAu77IB7eB54I7zR2m"
             alt="Board and Card Games"
             className="rounded-lg shadow-xl object-cover w-full h-full"
             style={{ maxHeight: '500px', objectFit: 'cover' }}
