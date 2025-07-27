@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
-const PattiGuideArticle = () => {
+const PattiGuideArticle: React.FC = () => {
   const navigate = useNavigate();
 
   return (
@@ -27,12 +27,9 @@ const PattiGuideArticle = () => {
           <div className="prose prose-sm sm:prose lg:prose-lg max-w-none text-gray-800">
             <p>
               111 Patti (also known as Teen Patti) is a popular card game that's easy to learn and fun to play with friends and family. Rooted in traditional Indian culture, 111 Patti has evolved into an engaging game both online and offline.
-              {/* ✅ Changed "entertainment experience" to remove any vague monetization tone */}
             </p>
 
-            <p>
-              In this guide, we'll explain the complete rules, card rankings, and game flow of 111 Patti – perfect for beginners.
-            </p>
+            <p>In this guide, we'll explain the complete rules, card rankings, and game flow of 111 Patti – perfect for beginners.</p>
 
             <h2>What is 111 Patti?</h2>
             <p>111 Patti is a three-card game inspired by Poker.</p>
@@ -47,13 +44,11 @@ const PattiGuideArticle = () => {
               <li>A standard 52-card deck (no jokers)</li>
               <li>3–6 players</li>
               <li>Score counters or tokens (optional)</li>
-              {/* ✅ Replaced "Chips (play money or real)" with neutral "Score counters or tokens" */}
             </ul>
 
             <h2>Game Flow: Step-by-Step</h2>
             <h3>1. Ante (Starting Point)</h3>
             <p>All players contribute a starting value to create the initial pool.</p>
-            {/* ✅ Replaced "bet" with "value" and "pot" with "pool" to remove betting implication */}
 
             <h3>2. Dealing Cards</h3>
             <p>Each player receives 3 face-down cards.</p>
@@ -68,13 +63,11 @@ const PattiGuideArticle = () => {
             </ul>
             <p>Blind: Must match or increase the current value</p>
             <p>Seen: Play based on card strength</p>
-            {/* ✅ Adjusted terms to be value-based instead of bet-based */}
 
             <h3>4. Showdown</h3>
             <p>With 2 players left, a "Show" decides the winner based on hand strength.</p>
 
             <h2>111 Patti Hand Rankings (High to Low)</h2>
-            {/* Table is educational and fine to keep as-is */}
             <div className="overflow-x-auto">
               <table className="min-w-full bg-white border border-gray-200 text-sm">
                 <thead className="bg-gray-100">
@@ -138,12 +131,9 @@ const PattiGuideArticle = () => {
 
             <h2>Want to Try 111 Patti Digitally?</h2>
             <p>There are several free apps that simulate the experience. Look for apps that don’t involve any financial transactions.</p>
-            {/* ✅ Clarified that apps should be for practice and not involve money */}
 
             <h2>Final Thoughts</h2>
-            <p>
-              111 Patti isn’t just a game – it’s a great way to enjoy time with friends while boosting your brain power.
-            </p>
+            <p>111 Patti isn’t just a game – it’s a great way to enjoy time with friends while boosting your brain power.</p>
           </div>
 
           {/* Navigation Buttons */}
