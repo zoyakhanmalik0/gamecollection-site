@@ -1,9 +1,15 @@
 import React from 'react';
 import { Download } from 'lucide-react';
 
-const DownloadPage = () => {
-  // ✅ List of download buttons (no betting-related terms present)
-  const buttons = [
+// ✅ Define Type for Button
+interface DownloadButton {
+  label: string;
+  href: string;
+}
+
+const DownloadPage: React.FC = () => {
+  // ✅ List of download buttons (typed using DownloadButton[])
+  const buttons: DownloadButton[] = [
     { label: 'Download 3Patti DragonTigerClub', href: 'https://3pattirs.net/?from_gameid=5806525&channelCode=100000' },
     { label: 'Download 3 Patti Teen Official', href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000' },
     { label: 'Download Official Flying Chess', href: 'https://flyingchess.com/?from_gameid=8307610&channelCode=100000' },
@@ -17,12 +23,11 @@ const DownloadPage = () => {
     { label: 'Download 3 Patti Lucky', href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000' },
   ];
 
-  // ✅ Green gradient style applied to buttons
-  const greenGradient = 'bg-gradient-to-r from-green-400 to-emerald-600 hover:from-green-600 hover:to-emerald-700';
+  const greenGradient =
+    'bg-gradient-to-r from-green-400 to-emerald-600 hover:from-green-600 hover:to-emerald-700';
 
   return (
     <div className="min-h-screen bg-amber-50 flex flex-col items-center text-center px-4 sm:px-6 lg:px-8 py-6">
-      
       {/* ✅ Top Image */}
       <div className="w-full max-w-2xl mb-8">
         <img
@@ -48,7 +53,7 @@ const DownloadPage = () => {
         ))}
       </div>
 
-      {/* ✅ Second Image (after first 4 buttons) */}
+      {/* ✅ Second Image */}
       <div className="w-full max-w-3xl mb-10 mx-auto">
         <img
           src="https://miro.medium.com/v2/resize:fit:1280/1*1cPINnY3SbqkqC4TLAL43g.jpeg"
@@ -61,7 +66,7 @@ const DownloadPage = () => {
       <div className="w-full max-w-md space-y-4 mx-auto mb-10">
         {buttons.slice(4).map(({ label, href }, index) => (
           <a
-            key={index + 4} // ✅ Ensure unique key
+            key={index + 4}
             href={href}
             target="_blank"
             rel="noopener noreferrer"
