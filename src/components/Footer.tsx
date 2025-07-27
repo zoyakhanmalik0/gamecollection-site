@@ -10,11 +10,11 @@ const Footer: React.FC = () => {
         <div className="flex justify-center mb-8">
           <nav className="flex flex-wrap justify-center gap-4 sm:gap-8">
             {/* ✅ Corrected paths to match standard route naming conventions */}
-            <Link to="/game-guides" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Strategy Hub</Link>
-            <Link to="/reviews" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Expert Opinions</Link>
+            <Link to="/game-guides" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Strategy Center</Link>
+            <Link to="/reviews" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Game Insights</Link>
             <Link to="/tips" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Winning Moves</Link>
             <Link to="/about" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Our Vision</Link>
-            <Link to="/contact" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Talk to Us</Link>
+            <Link to="/contact" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Reach Us</Link>
             <Link to="/privacy-policy" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Policy & Terms</Link>
           </nav>
         </div>
