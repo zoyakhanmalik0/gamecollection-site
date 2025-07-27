@@ -25,9 +25,9 @@ const PattiGuideArticle = () => {
                     </div>
 
                     <div className="prose prose-sm sm:prose lg:prose-lg max-w-none text-gray-800">
-                        <p>111 Patti (also known as Teen Patti) is a popular card game that's easy to learn and fun to play with friends and family. Rooted in traditional Indian culture, 111 Patti has evolved into an engaging online and offline entertainment experience.</p>
+                        <p>111 Patti (also known as Teen Patti) is a fun and easy card game to enjoy with friends and family. Rooted in traditional Indian culture, it has evolved into a popular game played both offline and online.</p> {/* UPDATED */}
 
-                        <p>In this guide, we'll explain the complete rules, card rankings, and game flow of 111 Patti – perfect for beginners.</p>
+                        <p>In this guide, we'll explain the complete rules, card rankings, and gameplay of 111 Patti – perfect for beginners.</p>
 
                         <h2>What is 111 Patti?</h2>
                         <p>111 Patti is a three-card game inspired by Poker.</p>
@@ -41,12 +41,12 @@ const PattiGuideArticle = () => {
                         <ul>
                             <li>A standard 52-card deck (no jokers)</li>
                             <li>3–6 players</li>
-                            <li>Chips (play money or real)</li>
+                            <li>Play tokens or points to keep score</li> {/* UPDATED */}
                         </ul>
 
                         <h2>Game Flow: Step-by-Step</h2>
-                        <h3>1. Ante (Boot Amount)</h3>
-                        <p>All players place a starting bet to create the pot.</p>
+                        <h3>1. Start Round</h3> {/* UPDATED: Previously "Ante (Boot Amount)" */}
+                        <p>All players contribute an equal starting amount of tokens or points to begin the round.</p> {/* UPDATED */}
 
                         <h3>2. Dealing Cards</h3>
                         <p>Each player receives 3 face-down cards.</p>
@@ -55,15 +55,15 @@ const PattiGuideArticle = () => {
 
                         <h3>3. Rounds Begin</h3>
                         <ul>
-                            <li><strong>Call:</strong> Match the bet</li>
+                            <li><strong>Call:</strong> Match the point value</li> {/* UPDATED */}
                             <li><strong>Chaal:</strong> Raise or continue</li>
-                            <li><strong>Fold/Pack:</strong> Exit the hand</li>
+                            <li><strong>Fold/Pack:</strong> Exit the round</li>
                         </ul>
-                        <p>Blind: Must double the current bet</p>
-                        <p>Seen: Bet equal to current point value</p>
+                        <p>Blind: Must play double the current point amount</p> {/* UPDATED */}
+                        <p>Seen: Play equal to the current point amount</p> {/* UPDATED */}
 
                         <h3>4. Showdown</h3>
-                        <p>With 2 players left, a "Show" decides the winner.</p>
+                        <p>With 2 players left, a "Show" determines the winner based on cards.</p>
 
                         <h2>111 Patti Hand Rankings (High to Low)</h2>
 
@@ -113,26 +113,26 @@ const PattiGuideArticle = () => {
 
                         <h2>Pro Tips for Beginners</h2>
                         <ul>
-                            <li>Start blind to understand betting</li>
-                            <li>Watch other players' moves</li>
+                            <li>Start blind to understand the flow</li> {/* UPDATED */}
+                            <li>Watch other players' actions</li>
                             <li>Don’t bluff unless confident</li>
                             <li>Practice offline first</li>
-                            <li>Play responsibly</li>
+                            <li>Always play for fun and learning</li> {/* UPDATED */}
                         </ul>
 
                         <h2>Is 111 Patti Safe to Play?</h2>
-                        <p>Yes, when played responsibly. It helps improve:</p>
+                        <p>Yes, when played for fun with friends and family. It helps improve:</p> {/* UPDATED */}
                         <ul>
                             <li>Strategic thinking</li>
                             <li>Memory and focus</li>
                             <li>Social bonding</li>
                         </ul>
 
-                        <h2>Try 111 Patti Online?</h2>
-                        <p>You can find free apps online to practice and play.</p>
+                        <h2>Where to Practice?</h2> {/* UPDATED: Heading changed */}
+                        <p>You can find free apps or use physical cards to practice and improve.</p> {/* UPDATED */}
 
                         <h2>Final Thoughts</h2>
-                        <p>111 Patti isn’t just a game – it’s a great way to enjoy time with friends while boosting your brain power.</p>
+                        <p>111 Patti is more than just a game – it’s a fun way to engage socially and boost brain power with friends.</p> {/* UPDATED */}
                     </div>
 
                     {/* Navigation Buttons */}
