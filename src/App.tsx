@@ -64,7 +64,7 @@ function App() {
         {/* General Pages */}
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactForm />} />
-        <Route path="/tips" element={<Tip />} /> {/* ✅ URL made clean */}
+        <Route path="/tippage" element={<Tip />} /> {/* ✅ URL made clean */}
         <Route path="/reviews" element={<Review />} /> {/* ✅ Changed from /GameReviewpage */}
         <Route path="/trending-games" element={<Trending />} />
         <Route path="/game-guides" element={<GameGuides />} />
