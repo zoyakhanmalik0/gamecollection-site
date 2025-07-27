@@ -15,45 +15,49 @@ const AboutUs = () => {
 
             <div className="prose max-w-none text-gray-700 space-y-6">
               <p className="text-base sm:text-lg">
-                Welcome to <span className="font-bold text-orange-600">officialdragontigerclub.online</span> — your go-to gaming blog for fun, strategy, and skill-based play.
+                Welcome to <span className="font-bold text-orange-600">officialdragontigerclub.online</span> — your trusted space for casual, skill-based gaming tips, guides, and insights.
               </p>
 
               <p>
-                We created this blog with one simple goal: to make gaming more enjoyable, informative, and accessible for everyone. Whether you're just getting started or looking to sharpen your skills, our guides, tips, and reviews are designed to help you play smarter and have more fun.
+                Our mission is simple: to help players of all levels enjoy gaming in a fun, responsible, and enriching way. From easy tutorials to advanced strategy guides, our content is designed to make learning and playing more enjoyable — without pressure or risk.
               </p>
 
               <p>
-                We cover a wide range of games, including board games, casual mobile games, card games for entertainment, and other non-gambling digital games. You'll find everything from step-by-step tutorials to strategy insights and gameplay updates — all written to keep things exciting, safe, and educational.
+                We focus on safe, family-friendly games including classic board games, casual mobile games, and skill-based challenges. Our blog features walkthroughs, tips, and articles to enhance your play — all written for general audiences and strictly entertainment-focused.
               </p>
 
               <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mt-8 mb-4">What We Offer</h2>
               <ul className="list-disc pl-5 sm:pl-6 space-y-2">
-                <li>Step-by-step game guides for beginners and casual players</li>
-                <li>Smart tips and strategies to boost your gameplay</li>
-                <li>Honest reviews of trending skill-based games</li>
-                <li>Safe download suggestions for popular apps</li>
-                <li>Gaming news and updates you can trust</li>
+                <li>Beginner-friendly game guides and how-to articles</li>
+                <li>Tips and strategies for improving your skills</li>
+                <li>Honest, research-based game reviews</li>
+                <li>Safe download suggestions for top-rated mobile games</li>
+                <li>Trusted updates on gaming trends and features</li>
               </ul>
 
               <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mt-8 mb-4">Our Commitment</h2>
               <p>
-                We do not promote real-money gaming, gambling, or betting of any kind. All the games and content shared on our site are meant for entertainment and educational purposes only. Our blog is built to comply with Google Ads policies, ensuring a safe and responsible platform for all users.
+                We do not promote or endorse any form of real-money gaming, gambling, or betting. Our content strictly avoids any such practices. Everything shared on our platform is meant for general education, safe entertainment, and skill-based learning only.
+              </p>
+
+              <p>
+                This website is designed in full compliance with Google Ads policies and safe browsing standards. Your experience here will always remain secure, respectful, and enjoyable.
               </p>
 
               <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mt-8 mb-4">Join the Fun!</h2>
               <p>
-                Gaming isn't just about winning — it's about learning, improving, and enjoying the process. We're here to build a community of gamers who love skill-based play, friendly competition, and lifelong learning through games.
+                Games are more than just play — they're opportunities to grow, connect, and explore new challenges. We're excited to support a positive, ad-safe gaming community that values creativity, curiosity, and smart fun.
               </p>
 
               <p>
-                Feel free to explore our latest posts, subscribe for weekly updates, or reach out if you have questions or suggestions.
+                Feel free to explore our latest content, bookmark your favorite guides, and reach out with feedback or suggestions. We love hearing from our readers!
               </p>
 
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-8 rounded-md">
                 <p className="font-semibold text-yellow-800">
-                  Thank you for visiting <span className="text-orange-600">officialdragontigerclub.online</span> — where gaming meets smart fun.
+                  Thank you for visiting <span className="text-orange-600">officialdragontigerclub.online</span> — where gaming is all about learning, fun, and safety.
                 </p>
-                <p className="font-bold text-gray-800 mt-2">Let the games begin!</p>
+                <p className="font-bold text-gray-800 mt-2">Let the games begin — responsibly!</p>
               </div>
             </div>
           </div>
@@ -65,3 +69,4 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
