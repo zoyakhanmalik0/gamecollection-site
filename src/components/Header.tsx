@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from "./image.jpg"; // Adjust the path if necessary
+import logo from "./image.jpg"; // ✅ Ensure 'image.jpg' is inside src folder or adjust path accordingly
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
           <Link to="/">
             <img
-              src={logo} // This works correctly with Vite since image.png is in the public/ folder
+              src={logo} // ✅ This works if image is imported correctly from ./image.jpg
               alt="Logo"
               className="w-20 sm:w-24 h-16 sm:h-20 object-contain hover:opacity-90 transition-opacity"
             />
@@ -24,10 +24,11 @@ const Header = () => {
 
           {/* Navigation Links */}
           <nav className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-8">
+            {/* ✅ FIXED: Changed from /GameReviewPage to /game-reviews to match route (React Router is case-sensitive) */}
             <Link to="/game-guides" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
               Game Guides
             </Link>
-            <Link to="/GameReviewPage" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
+            <Link to="/game-reviews" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
               Game Reviews
             </Link>
             <Link to="/tippage" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
@@ -41,8 +42,8 @@ const Header = () => {
             </Link>
           </nav>
 
-          {/* Search & Subscribe */}
-          
+          {/* Placeholder: Search & Subscribe (optional) */}
+          {/* You can add a search input or newsletter form here later if needed */}
         </div>
       </div>
     </header>
@@ -50,3 +51,4 @@ const Header = () => {
 };
 
 export default Header;
+
