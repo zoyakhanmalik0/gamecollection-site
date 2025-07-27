@@ -12,11 +12,13 @@ const AIInGamingArticle: React.FC<AIInGamingArticleProps> = ({ onBack }) => {
     const navigate = useNavigate();
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-orange-100 via-amber-100 to-yellow-50 flex flex-col">
+        <div
+            className="min-h-screen bg-gradient-to-br from-[#ffecd2] via-[#fcb69f] to-[#ff9a9e] bg-fixed bg-cover flex flex-col"
+        >
             <Header />
 
             <main className="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
-                <article className="bg-white p-6 sm:p-10 md:p-12 rounded-2xl shadow-lg border border-orange-100">
+                <article className="bg-white/80 backdrop-blur-md p-6 sm:p-10 md:p-12 rounded-2xl shadow-2xl border border-orange-100">
 
                     {/* Back Button */}
                     <div className="mb-6">
@@ -34,7 +36,7 @@ const AIInGamingArticle: React.FC<AIInGamingArticleProps> = ({ onBack }) => {
                         <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
                             How AI Is Transforming the Gaming Landscape in 2025
                         </h1>
-                        <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-500">
+                        <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
                             <div className="flex items-center gap-2">
                                 <Calendar className="w-4 h-4" />
                                 Jan 15, 2025
@@ -66,7 +68,7 @@ const AIInGamingArticle: React.FC<AIInGamingArticleProps> = ({ onBack }) => {
                         </p>
                     </section>
 
-                    {/* Sections */}
+                    {/* Article Sections */}
                     {[
                         {
                             title: "Smarter NPCs with Personality",
@@ -111,8 +113,8 @@ const AIInGamingArticle: React.FC<AIInGamingArticleProps> = ({ onBack }) => {
                             </h2>
                             <p className="text-gray-700 mb-4">{section.body}</p>
                             <ul className="list-disc list-inside text-gray-700 space-y-1">
-                                {section.features.map((feature, idx) => (
-                                    <li key={idx}>{feature}</li>
+                                {section.features.map((feature, i) => (
+                                    <li key={i}>{feature}</li>
                                 ))}
                             </ul>
                         </section>
@@ -153,7 +155,7 @@ const AIInGamingArticle: React.FC<AIInGamingArticleProps> = ({ onBack }) => {
                     </section>
 
                     {/* Tags */}
-                    <footer className="text-sm text-gray-500 mt-10 border-t pt-6">
+                    <footer className="text-sm text-gray-600 mt-10 border-t pt-6">
                         Tags: <span className="text-orange-600">AI</span>, Gaming, Technology, 2025, Innovation
                     </footer>
 
