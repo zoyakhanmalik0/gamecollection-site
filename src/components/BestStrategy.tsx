@@ -3,14 +3,13 @@ import Header from './Header';
 import Footer from './Footer';
 import { useNavigate } from 'react-router-dom';
 
-const PattiGuideArticle: React.FC = () => {
+const StrategyGuideArticle: React.FC = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-orange-50 flex flex-col">
       <Header />
 
-      {/* Main Content Wrapper */}
       <div className="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
         <section className="bg-white p-6 sm:p-8 md:p-10 rounded-xl shadow-md">
           {/* Article Header */}
@@ -19,7 +18,6 @@ const PattiGuideArticle: React.FC = () => {
               How Strategy Games Teach Everyday Skills
             </h1>
 
-            {/* Hero Image */}
             <div className="mb-8">
               <img
                 src="https://www.edarabia.com/wp-content/uploads/2019/01/award-supporting-teaching-learning-238627.jpg"
@@ -28,16 +26,15 @@ const PattiGuideArticle: React.FC = () => {
               />
             </div>
 
-            {/* Introduction */}
             <div className="text-left max-w-3xl mx-auto">
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6">
-                When you think of video games or board games, fun and entertainment might be the first things that come to mind.
-                But did you know that strategy games are actually powerful tools for developing essential life skills?
-                Whether you're battling opponents in Starcraft or Civilization, playing chess, or commanding virtual armies in mobile games,
-                you're unknowingly sharpening your mind and learning lessons that apply well beyond the screen.
+                Strategy games aren't just about winning or entertainment—they are a great way to build useful life skills.
+                Whether you're playing chess, digital puzzles, or family-friendly mobile games, these experiences can
+                strengthen critical thinking, time management, and communication abilities.
               </p>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8">
-                In this article, we'll explore the everyday skills strategy games teach — and how they benefit people of all ages.
+                In this guide, we’ll explore the real-world benefits of strategy games and how they can support learning,
+                decision-making, and personal growth across all age groups.
               </p>
             </div>
           </div>
@@ -47,61 +44,61 @@ const PattiGuideArticle: React.FC = () => {
             {
               title: '1. Critical Thinking & Decision-Making',
               body:
-                'Strategy games challenge players to evaluate options and make decisions quickly and wisely. A single move in chess or a tactical misstep in a board game can determine the outcome — developing skills that are directly useful in daily life.',
+                'Games that require careful choices help players evaluate outcomes and make smart decisions. Whether it’s a logical puzzle or a digital board game, players must think ahead and weigh their options.',
               list: [
-                'Evaluating pros and cons in decisions',
-                'Analyzing consequences before taking action',
+                'Weighing pros and cons before acting',
+                'Considering consequences of decisions',
               ],
-              tip: 'Improving your ability to solve real-life problems',
+              tip: 'Builds real-life problem-solving confidence',
             },
             {
               title: '2. Planning & Time Management',
               body:
-                'Strategic games require long-term thinking, careful planning, and multitasking. Whether managing empires or balancing resources, players develop better foresight and patience.',
+                'Many games require players to think long-term, set goals, and manage limited resources. These habits translate directly into better planning in everyday life.',
               list: [
-                'Setting and achieving long-term goals',
-                'Managing deadlines and daily tasks',
-                'Understanding delayed gratification',
+                'Setting realistic goals and tracking progress',
+                'Managing tasks under time limits',
+                'Staying focused on priorities',
               ],
             },
             {
-              title: '3. Communication & Teamwork (In Multiplayer Games)',
+              title: '3. Communication & Teamwork (Multiplayer)',
               body:
-                'Many strategy games require collaboration and leadership. Players must coordinate, share ideas, and adapt their strategies in real time with others.',
+                'In multiplayer settings, strategy games encourage discussion, leadership, and cooperation. Whether online or offline, teamwork is essential to success.',
               list: [
-                'Working effectively in teams (school or office)',
-                'Expressing ideas clearly and concisely',
-                'Managing conflicts and group dynamics',
+                'Collaborating in groups at school or work',
+                'Expressing thoughts clearly and calmly',
+                'Handling group challenges and feedback',
               ],
             },
             {
               title: '4. Adaptability & Flexibility',
               body:
-                'Not all plans work perfectly. Players must constantly adapt to unexpected changes — whether it’s a surprise move or a rule shift.',
+                'Strategy games often change quickly, forcing players to adjust their approach. This builds mental flexibility, especially when outcomes are unpredictable.',
               list: [
-                'Staying calm during uncertainty',
-                'Adapting plans quickly under pressure',
-                'Welcoming new strategies and ideas',
+                'Responding to changes calmly',
+                'Thinking on your feet',
+                'Trying new approaches when things shift',
               ],
             },
             {
               title: '5. Focus & Attention to Detail',
               body:
-                'Great strategy players pay close attention to detail — tracking moves, predicting patterns, and staying focused.',
+                'Success in these games often requires staying alert, tracking actions, and noticing small clues. Players learn to filter distractions and sharpen their attention.',
               list: [
-                'Improved memory and concentration',
-                'Sharper focus at work or study',
-                'Spotting patterns others may miss',
+                'Better focus during work or study',
+                'Tracking complex instructions',
+                'Noticing patterns and solving tasks accurately',
               ],
             },
             {
               title: '6. Learning from Mistakes',
               body:
-                'Strategy games encourage trial and error. Losing teaches more than winning. Players learn to bounce back, adapt, and improve.',
+                'Losing a game can be a powerful teacher. Many strategy games encourage players to reflect, adapt, and try again — promoting persistence and growth.',
               list: [
-                'Developing a growth mindset',
-                'Handling failure with resilience',
-                'Using past mistakes to shape future success',
+                'Building emotional resilience',
+                'Turning feedback into improvement',
+                'Learning how to recover from setbacks',
               ],
             },
           ].map((section, index) => (
@@ -131,30 +128,30 @@ const PattiGuideArticle: React.FC = () => {
               <div>
                 <span className="font-semibold text-gray-900">• Students:</span>
                 <span className="text-gray-700 ml-2">
-                  Enhance planning, memory, and academic success
+                  Improve focus, memory, and academic thinking
                 </span>
               </div>
               <div>
                 <span className="font-semibold text-gray-900">• Professionals:</span>
                 <span className="text-gray-700 ml-2">
-                  Strengthen leadership, strategic thinking, and adaptability
+                  Boost leadership, organization, and teamwork
                 </span>
               </div>
               <div>
-                <span className="font-semibold text-gray-900">• Parents & Families:</span>
+                <span className="font-semibold text-gray-900">• Families:</span>
                 <span className="text-gray-700 ml-2">
-                  Enjoy fun bonding experiences that also build mental sharpness
+                  Enjoy meaningful play while building shared skills
                 </span>
               </div>
               <div>
                 <span className="font-semibold text-gray-900">• Kids:</span>
                 <span className="text-gray-700 ml-2">
-                  Learn critical thinking skills in an engaging, playful way
+                  Develop thinking and problem-solving skills while playing
                 </span>
               </div>
             </div>
             <p className="text-gray-700 leading-relaxed mt-4">
-              Even casual games can help players develop logic, patience, and strategic awareness — all while having fun.
+              Even lighthearted games can support learning and mental sharpness. Strategy play is a fun and positive way to grow.
             </p>
           </section>
 
@@ -164,15 +161,15 @@ const PattiGuideArticle: React.FC = () => {
               Final Thoughts
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Strategy games are more than entertainment — they’re mental gyms. From resource management to creative
-              problem-solving, each session is a chance to improve real-world skills and unlock your cognitive potential.
+              Strategy games provide more than entertainment — they offer real opportunities for personal growth. With every match,
+              puzzle, or turn, players develop cognitive skills that last far beyond the game itself.
             </p>
           </section>
 
           {/* Navigation Buttons */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-8">
             <button
-              onClick={() => navigate('/guides/how-to-play-111-patti')}
+              onClick={() => navigate('/guides/how-to-play-logical-games')}
               className="text-orange-500 hover:text-orange-600 transition-colors text-base font-semibold"
             >
               ← Previous Post
@@ -192,4 +189,4 @@ const PattiGuideArticle: React.FC = () => {
   );
 };
 
-export default PattiGuideArticle;
+export default StrategyGuideArticle;
