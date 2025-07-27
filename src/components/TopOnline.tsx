@@ -3,12 +3,10 @@ import Header from './Header';
 import { useNavigate } from 'react-router-dom';
 import Footer from './Footer';
 
-// ✅ Added proper function typing for React.FC
 const App: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    // ✅ Fixed: missing '>' in the div opening tag
     <div className="min-h-screen bg-orange-50">
       <Header />
 
@@ -19,99 +17,95 @@ const App: React.FC = () => {
               Top Online Mobile Games in Pakistan (2025 Edition)
             </h1>
 
-            {/* Hero Image */}
             <div className="mb-6 sm:mb-8">
               <div className="w-full max-w-2xl mx-auto aspect-[16/9]">
                 <img
-                  src="https://elements-resized.envatousercontent.com/elements-video-cover-images/4d1ca4d6-04c7-4c7a-884d-0de7c89bcfbc/video_preview/video_preview_0000.jpg?w=500&cf_fit=cover&q=85&format=auto&s=964f87e9e0c75dd57c1d045828f96c2079d624b6b9ff71a9ec04d4876237d0d9"
-                  alt="Gamer playing mobile games"
+                  src="https://elements-resized.envatousercontent.com/elements-video-cover-images/4d1ca4d6-04c7-4c7a-884d-0de7c89bcfbc/video_preview/video_preview_0000.jpg?w=500"
+                  alt="Mobile gaming in Pakistan"
                   className="w-full h-full object-cover rounded-lg shadow-md"
                 />
               </div>
             </div>
 
-            {/* Introduction */}
             <div className="text-left max-w-3xl mx-auto">
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base mb-6">
-                Pakistan's mobile gaming landscape is evolving rapidly. Thanks to improved internet access,
-                affordable smartphones, and a growing youth population, online games are more popular than ever.
+                With 4G/5G penetration and an ever-growing digital youth population, Pakistan's mobile gaming scene is booming in 2025. Here's a look at the most popular mobile games shaping the industry today.
               </p>
             </div>
           </div>
 
-          {/* Game Sections */}
           {[
             {
               title: "1. PUBG Mobile",
-              desc: "Still leading the charts in Pakistan, PUBG Mobile (PlayerUnknown's Battlegrounds) remains a fan favorite among mobile gamers.",
+              desc: "PUBG Mobile has evolved with HD graphics and frequent regional events for Pakistani users.",
               points: [
-                "Localized servers for better performance",
-                "Active esports community",
-                "Regular updates and new maps",
-                "Supports Urdu language interface"
+                "Optimized for mid-range devices in 2025",
+                "Urdu commentary in events",
+                "Strong esports and college-level tournaments",
+                "Upgraded anti-cheat system"
               ]
             },
             {
-              title: "2. Free Fire",
-              desc: "Garena Free Fire is a top competitor to PUBG, especially on low- and mid-range smartphones.",
+              title: "2. Free Fire Max",
+              desc: "This upgraded version of Free Fire delivers immersive visuals without compromising performance.",
               points: [
-                "Fast-paced 10-minute matches",
-                "Low device requirements",
-                "Frequent tournaments and strong community"
+                "Stylish avatars and weapon skins",
+                "New Team Clash and Lone Wolf modes",
+                "Special Ramzan and Eid events in Pakistan"
               ]
             },
             {
-              title: "3. Ludo Star",
-              desc: "Based on the classic board game, Ludo Star is a favorite in many Pakistani households.",
+              title: "3. Ludo Star 2",
+              desc: "Ludo Star’s sequel features voice chat, live emojis, and a ranked ladder.",
               points: [
-                "Nostalgic and familiar gameplay",
-                "Social features with friends and family",
-                "Simple rules and short matches"
+                "Pakistani voice packs included",
+                "Play with local or global players",
+                "In-app gifting for friends"
               ]
             },
             {
               title: "4. Call of Duty: Mobile",
-              desc: "COD Mobile offers a console-like shooter experience right on your mobile device.",
+              desc: "With new seasons dropping regularly, COD Mobile remains a top-tier FPS for Pakistani players.",
               points: [
-                "Smooth graphics and realistic weapons",
-                "Popular among competitive players",
-                "Multiple game modes like Battle Royale and Team Deathmatch"
+                "Zombies mode reintroduced",
+                "Desi skins and weapon packs",
+                "Popular in university gaming lounges"
               ]
             },
             {
               title: "5. Candy Crush Saga",
-              desc: "For casual players, Candy Crush Saga continues to dominate the charts.",
+              desc: "Still a favorite among families, Candy Crush's bite-sized levels keep it evergreen.",
               points: [
-                "Can be played offline",
-                "Family-friendly with no age restriction",
-                "Relaxing and highly addictive"
+                "New weekly levels",
+                "Pakistani holiday-themed boards",
+                "Rewards for daily logins"
               ]
             },
             {
               title: "6. 8 Ball Pool",
-              desc: "A classic pool game with millions of players globally, including in Pakistan.",
+              desc: "Miniclip’s pool game is a go-to for casual gamers and competitive play alike.",
               points: [
-                "Realistic physics engine",
-                "Multiplayer and challenge friends",
-                "Both offline and online play supported"
+                "Voice chat during matches",
+                "Pakistan-only tournaments with prizes",
+                "Smooth controls and trick shot practice mode"
               ]
             },
             {
               title: "7. Subway Surfers",
-              desc: "Subway Surfers is a vibrant endless runner game with wide appeal.",
+              desc: "Now featuring Karachi and Lahore in its 2025 world tour, this classic endless runner gets a local twist.",
               points: [
-                "Easy for anyone to play",
-                "Works offline",
-                "Regular updates featuring new cities and themes"
+                "Colorful Pakistani-themed outfits",
+                "Offline play supported",
+                "Frequent seasonal events"
               ]
             },
             {
               title: "8. Asphalt 9: Legends",
-              desc: "Asphalt 9 delivers high-octane car racing with console-quality graphics.",
+              desc: "Top racing game with jaw-dropping graphics and an expanding car list.",
               points: [
-                "Stunning visuals and smooth gameplay",
-                "Licensed cars from top brands",
-                "Supports both online and offline modes"
+                "Local multiplayer events",
+                "Optimized for 90Hz displays",
+                "Offline career mode available"
               ]
             }
           ].map((game, index) => (
@@ -130,30 +124,27 @@ const App: React.FC = () => {
             </section>
           ))}
 
-          {/* Bonus Mentions */}
           <section className="mb-10">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Bonus Mentions:</h2>
             <ul className="list-disc list-inside text-gray-700 text-sm sm:text-base space-y-2 ml-4">
-              <li><strong>Among Us</strong> – Social deduction fun that remains popular in friend groups</li>
-              <li><strong>Clash Royale</strong> – Real-time strategy and card battles for competitive players</li>
-              <li><strong>My Talking Tom</strong> – A hit among children and casual players</li>
+              <li><strong>Clash of Clans</strong> – Still huge in Pakistani villages and towns</li>
+              <li><strong>My Talking Angela 2</strong> – Popular among children with new local costumes</li>
+              <li><strong>Dragon Tiger</strong> – Fast-paced card game gaining traction in 2025</li>
             </ul>
           </section>
 
-          {/* Final Thoughts */}
           <section className="mb-10 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
               Final Thoughts
             </h2>
             <p className="text-gray-700 leading-relaxed text-sm sm:text-base mb-4">
-              Pakistan's mobile gaming community is thriving. Whether you're into high-action shooters or casual games, there's something for everyone.
+              Whether you're a competitive player or a casual gamer, Pakistan's mobile game choices have never been richer. Stay tuned to discover the next viral hit!
             </p>
             <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-              Tell us your favorite mobile game in the comments, and keep following us for more gaming updates!
+              Comment your favorite game below and share with fellow gamers!
             </p>
           </section>
 
-          {/* Navigation Button */}
           <div className="flex justify-end items-center mb-4">
             <button
               onClick={() => navigate('/guides/how-to-play-111-patti')}
