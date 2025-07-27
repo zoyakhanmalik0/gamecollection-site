@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Removed useNavigate (not needed)
 
 const LatestPosts = () => {
-  const navigate = useNavigate();
-
   const posts = [
     {
       id: 1,
@@ -61,22 +59,16 @@ const LatestPosts = () => {
             to={post.link}
             className="bg-white rounded-xl shadow-lg overflow-hidden group cursor-pointer transform transition-all hover:scale-105 block"
           >
+            {/* Wrapped full card in Link - removed navigate() and onClick */}
             <img
               src={post.image}
               alt={post.title}
               className="w-full h-48 sm:h-52 md:h-56 object-cover group-hover:scale-110 transition-transform duration-300"
             />
             <div className="p-4 sm:p-6">
-              <div
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigate(post.link);
-                }}
-                className="font-semibold sm:font-bold text-base sm:text-lg text-gray-800 mb-2 hover:text-orange-600 transition-colors cursor-pointer"
-              >
+              <div className="font-semibold sm:font-bold text-base sm:text-lg text-gray-800 mb-2 group-hover:text-orange-600 transition-colors">
                 {post.title}
               </div>
-
               <p className="text-gray-600 text-sm mb-3">{post.description}</p>
               <div className="flex items-center justify-between text-xs sm:text-sm text-gray-500">
                 <span>{post.date}</span>
