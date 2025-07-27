@@ -16,21 +16,20 @@ const StrategySkillsArticle: React.FC = () => {
   const sections: StrategySection[] = [
     {
       title: "1. Critical Thinking & Decision-Making",
-      body: "Strategy games challenge players to think ahead, evaluate options, and make informed decisions quickly. In games like chess or board game, if a single move can determine the outcome, players develop sharp analytical skills that transfer to everyday situations.",
+      body: "Strategy games challenge players to think ahead, evaluate outcomes, and make thoughtful decisions. Whether playing chess or a family-friendly board game, these activities can help sharpen decision-making skills that translate into real-world applications.",
       list: [
-        "Evaluating pros and cons in personal decisions",
-        "Analyzing pros and cons before key decisions"
+        "Weighing options before making personal decisions",
+        "Thinking critically in time-sensitive situations"
       ],
-      tip: "Improving problem-solving in daily life"
+      tip: "Boosting everyday problem-solving with structured thinking"
     },
-    // You can add more sections here as needed...
+    // Add more skill sections as needed
   ];
 
   return (
     <div className="min-h-screen bg-orange-50 flex flex-col">
       <Header />
 
-      {/* Main Content Wrapper */}
       <div className="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
         <section className="bg-white p-6 sm:p-8 md:p-10 rounded-xl shadow-md">
           {/* Article Header */}
@@ -48,33 +47,28 @@ const StrategySkillsArticle: React.FC = () => {
               />
             </div>
 
-            {/* ✅ Disclaimer for clarity */}
+            {/* Disclaimer */}
             <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6 rounded-md">
               <p className="text-sm text-gray-700 font-medium">
-                Note: This article does not promote any real-money card games or gambling. All content is educational, based on skill-building and strategy.
+                Note: This article focuses on educational and recreational strategy games only. We do not promote real-money games, gambling, or betting.
               </p>
             </div>
 
             {/* Introduction */}
             <div className="text-left max-w-3xl mx-auto">
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6">
-                When you think of video games or board games, fun and entertainment might be the
-                first things that come to mind. But did you know that strategy games are actually
-                powerful tools for developing essential life skills?
+                Strategy games go far beyond fun—they're an engaging way to develop valuable skills for school, work, and daily life. Whether on a board or a screen, these games challenge the mind in healthy, positive ways.
               </p>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8">
-                In this article, we'll explore the key everyday skills that strategy games teach and how
-                they benefit players of all ages.
+                In this article, we'll explore how strategy-based games support lifelong learning through critical thinking, planning, and decision-making.
               </p>
             </div>
           </div>
 
-          {/* Mapped Sections */}
+          {/* Skill Sections */}
           {sections.map((section, index) => (
             <section className="mb-10" key={index}>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                {section.title}
-              </h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">{section.title}</h2>
               <p className="text-gray-700 leading-relaxed mb-4">{section.body}</p>
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Real-life Application:</h3>
               <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
@@ -98,24 +92,23 @@ const StrategySkillsArticle: React.FC = () => {
             <div className="space-y-4 text-base sm:text-lg">
               <div>
                 <span className="font-semibold text-gray-900">• Students:</span>
-                <span className="text-gray-700 ml-2">Improve academic performance, planning, and focus</span>
+                <span className="text-gray-700 ml-2">Build concentration, planning, and problem-solving skills</span>
               </div>
               <div>
                 <span className="font-semibold text-gray-900">• Professionals:</span>
-                <span className="text-gray-700 ml-2">Strengthen decision-making and leadership</span>
+                <span className="text-gray-700 ml-2">Practice strategic thinking and time management</span>
               </div>
               <div>
-                <span className="font-semibold text-gray-900">• Parents & Families:</span>
-                <span className="text-gray-700 ml-2">Bond over meaningful, brain-boosting fun</span>
+                <span className="font-semibold text-gray-900">• Families:</span>
+                <span className="text-gray-700 ml-2">Enjoy bonding time while boosting mental focus</span>
               </div>
               <div>
                 <span className="font-semibold text-gray-900">• Kids:</span>
-                <span className="text-gray-700 ml-2">Develop foundational thinking skills in a playful way</span>
+                <span className="text-gray-700 ml-2">Learn patience, pattern recognition, and logical steps</span>
               </div>
             </div>
             <p className="text-gray-700 leading-relaxed mt-4">
-              Even casual games can teach young players how to think logically, stay patient, and strategize
-              in simple learning fun!
+              Even simple strategy games can help younger players develop early cognitive skills in a fun and interactive way.
             </p>
           </section>
 
@@ -125,9 +118,7 @@ const StrategySkillsArticle: React.FC = () => {
               Final Thoughts
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Strategy games are much more than just a source of entertainment — they're training grounds for the mind. Whether
-              you're solving puzzles, managing an empire, or making moves in a fresh light, you're practicing
-              skills that matter in real life.
+              Strategy games are more than a way to pass time—they're a useful tool for enhancing thinking skills, improving patience, and encouraging thoughtful decision-making. From families to professionals, these games offer benefits that extend well beyond the game board.
             </p>
           </section>
 
