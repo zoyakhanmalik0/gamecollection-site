@@ -39,10 +39,11 @@ const TipsPage: React.FC = () => {
                                 How AI Is Changing the Way We Play Games in 2025
                             </h2>
 
+                            {/* ✅ Updated paragraph to reflect AI in gaming instead of board game content */}
                             <p className="text-gray-600 mb-6 leading-relaxed text-sm sm:text-base">
-                                Dragon Chess combines fast-paced gameplay with tactical depth. In this review,
-                                we break down its features, pros, and how it compares to traditional board games.
-                                Discover why it's quickly becoming a favorite among casual and competitive players alike.
+                                Artificial Intelligence is transforming modern gameplay. From smarter NPCs to adaptive 
+                                game levels and real-time strategy balancing, AI enhances player experience like never 
+                                before. Learn how the gaming industry is evolving in 2025 through cutting-edge technology.
                             </p>
 
                             <button
