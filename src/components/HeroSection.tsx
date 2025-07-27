@@ -8,7 +8,7 @@ interface DownloadButton {
 }
 
 const DownloadPage: React.FC = () => {
-  // ✅ List of download buttons (typed using DownloadButton[])
+  // ✅ List of download buttons
   const buttons: DownloadButton[] = [
     { label: 'Download 3Patti DragonTigerClub', href: 'https://3pattirs.net/?from_gameid=5806525&channelCode=100000' },
     { label: 'Download 3 Patti Teen Official', href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000' },
@@ -28,7 +28,16 @@ const DownloadPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-amber-50 flex flex-col items-center text-center px-4 sm:px-6 lg:px-8 py-6">
-      {/* ✅ Top Image */}
+      {/* ✅ Urdu Header Instruction Image */}
+      <div className="w-full max-w-2xl mb-6">
+        <img
+          src="/632edcdd-a1d6-4bfb-8a71-c38dfde920b0.png"
+          alt="Urdu Instructions"
+          className="w-full h-auto rounded-lg shadow-lg"
+        />
+      </div>
+
+      {/* ✅ Top Game Preview Image */}
       <div className="w-full max-w-2xl mb-8">
         <img
           src="https://apkfbi.com/wp-content/uploads/2025/03/1-1.webp"
@@ -53,8 +62,8 @@ const DownloadPage: React.FC = () => {
         ))}
       </div>
 
-      {/* ✅ Second Image */}
-      <div className="w-full max-w-3xl mb-10 mx-auto">
+      {/* ✅ Game Promo Image */}
+      <div className="w-full max-w-3xl mb-6 mx-auto">
         <img
           src="https://miro.medium.com/v2/resize:fit:1280/1*1cPINnY3SbqkqC4TLAL43g.jpeg"
           alt="3 Patti Promotion"
@@ -62,7 +71,16 @@ const DownloadPage: React.FC = () => {
         />
       </div>
 
-      {/* ✅ Remaining Buttons */}
+      {/* ✅ Urdu Note Instruction Image */}
+      <div className="w-full max-w-3xl mb-10 mx-auto">
+        <img
+          src="/01370601-027a-4f93-9470-863f8c3de3a9.png"
+          alt="Game Note in Urdu"
+          className="w-full h-auto rounded-xl shadow-lg"
+        />
+      </div>
+
+      {/* ✅ Remaining Download Buttons */}
       <div className="w-full max-w-md space-y-4 mx-auto mb-10">
         {buttons.slice(4).map(({ label, href }, index) => (
           <a
@@ -78,11 +96,20 @@ const DownloadPage: React.FC = () => {
         ))}
       </div>
 
-      {/* ✅ Final Image */}
-      <div className="w-full max-w-2xl mb-10 mx-auto">
+      {/* ✅ Final Game Bonus Image */}
+      <div className="w-full max-w-2xl mb-6 mx-auto">
         <img
           src="https://miro.medium.com/v2/resize:fit:694/1*O3xsvJ5O5t22A0v6IyE2Ag.jpeg"
           alt="Game Bonus Poster"
+          className="w-full h-auto rounded-xl shadow-xl"
+        />
+      </div>
+
+      {/* ✅ Urdu Invite & Share Image */}
+      <div className="w-full max-w-3xl mb-10 mx-auto">
+        <img
+          src="/8aec91bd-2fba-4e10-ba3a-4d778792f9f0.png"
+          alt="Invite & Share Instructions"
           className="w-full h-auto rounded-xl shadow-xl"
         />
       </div>
