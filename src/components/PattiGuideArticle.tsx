@@ -25,12 +25,12 @@ const PattiGuideArticle: React.FC = () => {
           </div>
 
           <div className="prose prose-sm sm:prose lg:prose-lg max-w-none text-gray-800">
-            <p>111 Patti (also known as Teen Patti) is a fun and easy card game to enjoy with friends and family. Rooted in traditional Indian culture, it has evolved into a popular game played both offline and online.</p>
+            <p>111 Patti is a fun and easy card game to enjoy with friends and family. Rooted in traditional culture, it has evolved into a popular game played both offline and online.</p>
 
             <p>In this guide, we'll explain the complete rules, card rankings, and gameplay of 111 Patti – perfect for beginners.</p>
 
             <h2>What is 111 Patti?</h2>
-            <p>111 Patti is a three-card game inspired by Poker.</p>
+            <p>111 Patti is a three-card game inspired by classic card strategies.</p>
             <ul>
               <li>It's a game of skill and strategy</li>
               <li>Can be played offline or online</li>
@@ -57,7 +57,7 @@ const PattiGuideArticle: React.FC = () => {
             <ul>
               <li><strong>Call:</strong> Match the point value</li>
               <li><strong>Chaal:</strong> Raise or continue</li>
-              <li><strong>Fold/Pack:</strong> Exit the round</li>
+              <li><strong>Fold:</strong> Exit the round</li>
             </ul>
             <p>Blind: Must play double the current point amount</p>
             <p>Seen: Play equal to the current point amount</p>
@@ -121,7 +121,7 @@ const PattiGuideArticle: React.FC = () => {
             </ul>
 
             <h2>Is 111 Patti Safe to Play?</h2>
-            <p>Yes, when played for fun with friends and family. It helps improve:</p>
+            <p>Yes, when played casually with friends and family. It helps improve:</p>
             <ul>
               <li>Strategic thinking</li>
               <li>Memory and focus</li>
