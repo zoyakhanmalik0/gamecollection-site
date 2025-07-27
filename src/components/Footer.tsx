@@ -15,6 +15,7 @@ const Footer: React.FC = () => {
             <Link to="/tips" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Tips & Tricks</Link>
             <Link to="/about" className="text-gray-600 hover:text-red-600 transition-colors text-sm">About</Link>
             <Link to="/contact" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Contact</Link>
+            <Link to="/privacy-policy" className="text-gray-600 hover:text-red-600 transition-colors text-sm">Privacy Policy</Link>
           </nav>
         </div>
 
