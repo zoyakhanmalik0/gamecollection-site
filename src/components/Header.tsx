@@ -31,10 +31,10 @@ const Header: React.FC = () => {
               Game Insights
             </Link>
             <Link to="/tips" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
-              Winning Hacks
+              Winning Moves
             </Link>
             <Link to="/about" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
-              Who We Are
+              Our Vision
             </Link>
             <Link to="/contact" className="text-gray-700 hover:text-red-600 transition-colors text-base font-bold">
               Reach Us
