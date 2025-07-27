@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
-// Dummy game data
-const games = [
+// ✅ Define game list as a typed array
+const games: string[] = [
   'PUBG Mobile',
   'Free Fire',
   'Ludo Star',
@@ -17,20 +17,21 @@ const games = [
   'My Talking Tom',
 ];
 
-const Trending = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+const Trending: React.FC = () => {
+  const [searchTerm, setSearchTerm] = useState<string>(''); // ✅ Explicitly typed
   const [results, setResults] = useState<string[]>([]);
 
-  // Handle search logic
-  const handleSearch = (e: React.FormEvent) => {
+  // ✅ Handle search logic on form submit
+  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    // If input is empty, reset results
     if (!searchTerm.trim()) {
       setResults([]);
       return;
     }
 
-    // Filter games that match search term (case-insensitive)
+    // ✅ Case-insensitive search
     const filtered = games.filter((game) =>
       game.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -40,13 +41,12 @@ const Trending = () => {
 
   return (
     <div className="min-h-screen bg-amber-50">
-      {/* Header */}
+      {/* ✅ Header component */}
       <Header />
 
-      {/* Main Content */}
+      {/* ✅ Main search box container */}
       <main className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          {/* White Box Container */}
           <div className="bg-white rounded-xl shadow-lg p-6 sm:p-10 text-center min-h-[500px] flex flex-col justify-center">
             
             {/* Page Title */}
@@ -54,12 +54,12 @@ const Trending = () => {
               Trending Games
             </h1>
 
-            {/* Message or Prompt */}
+            {/* Prompt */}
             <p className="text-gray-600 text-base sm:text-lg mb-10">
               Search for popular mobile games trending in Pakistan.
             </p>
 
-            {/* Search Form */}
+            {/* ✅ Search Input + Button */}
             <form
               onSubmit={handleSearch}
               className="flex flex-col sm:flex-row justify-center items-stretch gap-2 sm:gap-0 max-w-md mx-auto w-full"
@@ -79,19 +79,20 @@ const Trending = () => {
               </button>
             </form>
 
-            {/* Search Suggestions */}
+            {/* 🔍 Sample Keywords */}
             <div className="mt-6 text-sm text-gray-500">
-              Try searching for:{' '}
-              <span className="text-orange-500">PUBG</span>,{' '}
+              Try searching for: <span className="text-orange-500">PUBG</span>,{' '}
               <span className="text-orange-500">Ludo</span>,{' '}
               <span className="text-orange-500">Candy Crush</span>
             </div>
 
-            {/* Search Results */}
+            {/* ✅ Display Results */}
             <div className="mt-10 text-left">
               {results.length > 0 ? (
                 <div>
-                  <h2 className="text-lg font-semibold text-gray-800 mb-3">Search Results:</h2>
+                  <h2 className="text-lg font-semibold text-gray-800 mb-3">
+                    Search Results:
+                  </h2>
                   <ul className="list-disc list-inside text-gray-700 space-y-2">
                     {results.map((game, index) => (
                       <li key={index}>{game}</li>
@@ -99,14 +100,16 @@ const Trending = () => {
                   </ul>
                 </div>
               ) : searchTerm ? (
-                <p className="text-red-500 mt-6">No results found for "{searchTerm}"</p>
+                <p className="text-red-500 mt-6">
+                  No results found for "{searchTerm}"
+                </p>
               ) : null}
             </div>
           </div>
         </div>
       </main>
 
-      {/* Footer */}
+      {/* ✅ Footer component */}
       <Footer />
     </div>
   );
