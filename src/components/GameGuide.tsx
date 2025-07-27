@@ -16,15 +16,15 @@ const GameGuides: React.FC = () => {
     {
       id: 'how-to-play-111-patti',
       title: 'How to Play 111 Patti for Beginners - Complete Rules Explained',
-      // ❌ Removed "also known as Teen Patti" due to ad policy concerns (Teen Patti = real-money gambling game)
-      excerpt: '111 Patti is a popular card-based strategy game that\'s easy to learn and fun to play...',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzpKLWXs4U_kNstKgNR7a3imy8ZrN2KSxRgOX0I_nDRDV4nly6kSsKzZqiuMx3wZRW-JE&usqp=CAU'
+      // ✅ Safe excerpt for ad policies
+      excerpt: "111 Patti is a popular card-based strategy game that's easy to learn and fun to play...",
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzpKLWXs4U_kNstKgNR7a3imy8ZrN2KSxRgOX0I_nDRDV4nly6kSsKzZqiuMx3wZRW-JE&usqp=CAU',
     },
     {
       id: 'flying-chess-vs-ludo',
       title: 'Flying Chess vs. Ludo vs. Snakes & Ladders - Which is Best for Game Night?',
       excerpt: 'When it comes to family game nights or friendly get-togethers, nothing beats the charm of classic board games...',
-      image: 'https://chronicleillinois.com/wp-content/uploads/2024/06/WOODFORD-061924-Eureka-Public-Library-notes-PHOTO-1-300x201.jpeg'
+      image: 'https://chronicleillinois.com/wp-content/uploads/2024/06/WOODFORD-061924-Eureka-Public-Library-notes-PHOTO-1-300x201.jpeg',
     }
   ];
 
@@ -44,14 +44,16 @@ const GameGuides: React.FC = () => {
                 key={article.id}
                 className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition-shadow"
               >
+                {/* Image Section */}
                 <div className="w-full flex justify-center p-4 sm:p-6 lg:p-8">
                   <img
                     src={article.image}
-                    alt={article.title} // ✅ alt tag matches title for accessibility
+                    alt={article.title}
                     className="w-full max-w-4xl h-60 sm:h-96 lg:h-[36rem] object-cover rounded-xl"
                   />
                 </div>
 
+                {/* Text Content Section */}
                 <div className="px-6 sm:px-8 lg:px-10 pb-10 sm:pb-12">
                   <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-gray-800 mb-4 sm:mb-6 hover:text-red-600 transition-colors">
                     <Link to={`/guides/${article.id}`}>
