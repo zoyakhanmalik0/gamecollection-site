@@ -1,8 +1,20 @@
+// ✅ Converted to TSX
 import React from 'react';
-import { Link } from 'react-router-dom'; // Removed useNavigate (not needed)
+import { Link } from 'react-router-dom';
 
-const LatestPosts = () => {
-  const posts = [
+// ✅ Defined interface for post structure
+interface Post {
+  id: number;
+  title: string;
+  description: string;
+  date: string;
+  image: string;
+  link: string;
+}
+
+const LatestPosts: React.FC = () => {
+  // ✅ Typed posts as Post[]
+  const posts: Post[] = [
     {
       id: 1,
       title: "Top Online Mobile Games in Pakistan",
@@ -59,7 +71,7 @@ const LatestPosts = () => {
             to={post.link}
             className="bg-white rounded-xl shadow-lg overflow-hidden group cursor-pointer transform transition-all hover:scale-105 block"
           >
-            {/* Wrapped full card in Link - removed navigate() and onClick */}
+            {/* ✅ Image with hover effect */}
             <img
               src={post.image}
               alt={post.title}
