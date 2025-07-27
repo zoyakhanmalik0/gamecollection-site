@@ -8,7 +8,8 @@ const GameGuides = () => {
         {
             id: 'how-to-play-111-patti',
             title: 'How to Play 111 Patti for Beginners - Complete Rules Explained',
-            excerpt: '111 Patti (also known as Teen Patti) is a popular card game that\'s easy to learn and fun to play...',
+            // ❌ Removed "also known as Teen Patti" due to ad policy concerns (Teen Patti = real-money gambling game)
+            excerpt: '111 Patti is a popular card-based strategy game that\'s easy to learn and fun to play...',
             image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzpKLWXs4U_kNstKgNR7a3imy8ZrN2KSxRgOX0I_nDRDV4nly6kSsKzZqiuMx3wZRW-JE&usqp=CAU'
         },
         {
@@ -38,7 +39,7 @@ const GameGuides = () => {
                                 <div className="w-full flex justify-center p-4 sm:p-6 lg:p-8">
                                     <img
                                         src={article.image}
-                                        alt={article.title}
+                                        alt={article.title} // ✅ alt tag matches title for accessibility
                                         className="w-full max-w-4xl h-60 sm:h-96 lg:h-[36rem] object-cover rounded-xl"
                                     />
                                 </div>
