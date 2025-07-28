@@ -10,12 +10,12 @@ const AboutUs = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 md:p-12">
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-8 text-center">
-              About Us - Officialamy Guide
+              About Us - Play Card Fun Guide
             </h1>
 
             <div className="prose max-w-none text-gray-700 space-y-6">
               <p className="text-base sm:text-lg">
-                Welcome to <span className="font-bold text-orange-600">officialdragontigerclub.online</span> — your trusted space for casual, skill-based gaming tips, guides, and insights.
+                Welcome to <span className="font-bold text-orange-600">playcardfun.online</span> — your trusted space for casual, skill-based gaming tips, guides, and insights.
               </p>
 
               <p>
@@ -55,7 +55,7 @@ const AboutUs = () => {
 
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-8 rounded-md">
                 <p className="font-semibold text-yellow-800">
-                  Thank you for visiting <span className="text-orange-600">officialdragontigerclub.online</span> — where gaming is all about learning, fun, and safety.
+                  Thank you for visiting <span className="text-orange-600">playcardfun.online</span> — where gaming is all about learning, fun, and safety.
                 </p>
                 <p className="font-bold text-gray-800 mt-2">Let the games begin — responsibly!</p>
               </div>
