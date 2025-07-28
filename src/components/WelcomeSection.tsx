@@ -10,7 +10,7 @@ const WelcomeSection = () => {
             Your Gaming Blog for Skill, Fun & Strategy
           </h1>
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-            Welcome to Game Collector Guide
+            Welcome to Play Card Fun Guide
           </h2>
           <p className="text-base sm:text-lg text-gray-700 mb-8 leading-relaxed">
             Looking for a gaming blog that keeps things smart, fun, and totally entertaining?
@@ -23,7 +23,7 @@ const WelcomeSection = () => {
 
           <div className="space-y-6">
             <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800">
-              What You'll Find on <span className="text-yellow-600">gamecollector.site</span>
+              What You'll Find on <span className="text-yellow-600">playcardfun.online</span>
             </h3>
             <ul className="space-y-4 text-gray-700 text-sm sm:text-base md:text-lg">
               {[
