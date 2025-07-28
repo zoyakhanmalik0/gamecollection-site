@@ -10,17 +10,17 @@ interface DownloadButton {
 const DownloadPage: React.FC = () => {
   // ✅ Safe, generic, policy-compliant game links
   const buttons: DownloadButton[] = [
-    { label: 'Download Dragon Tiger Club', href: 'https://3pattirs.net/?from_gameid=5806525&channelCode=100000' },
-    { label: 'Download Classic Card App', href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000' },
-    { label: 'Download Official Flying Chess', href: 'https://flyingchess.com/?from_gameid=8307610&channelCode=100000' },
-    { label: 'Download Card Master Club', href: 'https://dragontigerclub.com/?from_gameid=5806525&channelCode=100000' },
-    { label: 'Download Gold Card Game', href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000' },
-    { label: 'Download Blue Card Room', href: 'https://3pattirs.net/?from_gameid=5806525&channelCode=100000' },
-    { label: 'Download Crown Card Club', href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000' },
-    { label: 'Download Golden Room', href: 'https://3pattirs.net/?from_gameid=5806525&channelCode=100000' },
-    { label: 'Download Card Pro Zone', href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000' },
-    { label: 'Download Champion Cards', href: 'https://3pattirs.net/?from_gameid=5806525&channelCode=100000' },
-    { label: 'Download Card Play Club', href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000' },
+    { label: 'Download 3 Patti DragonTiger Official', href: 'https://3pattirs.net/?from_gameid=5806525&channelCode=100000' },
+    { label: 'Download 3 Patti Teen Official ', href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000' },
+    { label: 'Download Flying Chess Official', href: 'https://flyingchess.com/?from_gameid=8307610&channelCode=100000' },
+    { label: 'Download 3 Patti DTC', href: 'https://dragontigerclub.com/?from_gameid=5806525&channelCode=100000' },
+    { label: 'Download 3 Patti Blue', href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000' },
+    { label: 'Download 3 Patti Crown', href: 'https://3pattirs.net/?from_gameid=5806525&channelCode=100000' },
+    { label: 'Download 3 Patti Gold', href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000' },
+    { label: 'Download 3 Patti Land ', href: 'https://3pattirs.net/?from_gameid=5806525&channelCode=100000' },
+    { label: 'Download 3 Patti OK', href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000' },
+    { label: 'Download 3 Patti Loot', href: 'https://3pattirs.net/?from_gameid=5806525&channelCode=100000' },
+    { label: 'Download 3 Patti Ludo', href: 'https://3pattiteen.com/?from_gameid=8307610&channelCode=100000' },
   ];
 
   const greenGradient =
