@@ -75,7 +75,7 @@ const PrivacyPolicy: React.FC = () => {
           <h2 className="text-2xl font-semibold mt-6 mb-2">11. Contact Us</h2>
           <p className="mb-4">
             If you have any questions or requests regarding this Privacy Policy, please contact us at: <br />
-            <strong>Email:</strong> <a href="mailto:support@gamecollector.site" className="text-orange-600">support@gamecollector.site</a>
+            <strong>Email:</strong> <a href="mailto:support@gamecollector.site" className="text-orange-600">support@playcardfun.online</a>
           </p>
         </div>
       </main>
