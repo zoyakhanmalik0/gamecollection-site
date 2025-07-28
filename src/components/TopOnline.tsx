@@ -158,7 +158,7 @@ function App() {
                     {/* Navigation Button */}
                     <div className="flex justify-end items-center mb-4">
                         <button
-                            onClick={() => navigate('/guides/how-to-play-111-patti')}
+                            onClick={() => navigate('/guides/strategy-card-basics')}
                             className="text-orange-500 hover:text-orange-600 transition-colors text-sm sm:text-base"
                         >
                             Next Post →
