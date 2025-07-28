@@ -29,7 +29,7 @@ const LatestPosts: React.FC = () => {
       description: "Master F1 racing games with our comprehensive beginner's guide. Tips, tricks, and strategies included.",
       date: "December 8, 2023",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzpKLWXs4U_kNstKgNR7a3imy8ZrN2KSxRgOX0I_nDRDV4nly6kSsKzZqiuMx3wZRW-JE&usqp=CAU",
-      link: "/guides/how-to-play-111-patti",
+      link: "/guides/strategy-card-basics",
     },
     {
       id: 3,
