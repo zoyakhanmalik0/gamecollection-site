@@ -13,7 +13,7 @@ type Article = {
 const GameGuides: React.FC = () => {
   const articles: Article[] = [
     {
-      id: 'how-to-play-111-patti',
+      id: 'strategy-card-basics',
       title: 'How to Play 111 Patti for Beginners - Complete Rules Explained',
       excerpt: '111 Patti is a fun card game known for its simplicity and strategic play. Learn the basic rules in this beginner-friendly guide...',
       image: 'https://media.assettype.com/homegrown%2F2024-10-18%2Fzty8rusu%2FWhatsApp-Image-2024-10-17-at-4.09.08-PM.jpeg?w=480&auto=format%2Ccompress&fit=max'
