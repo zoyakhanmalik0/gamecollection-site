@@ -169,7 +169,7 @@ const StrategyGuideArticle: React.FC = () => {
           {/* Navigation Buttons */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-8">
             <button
-              onClick={() => navigate('/guides/how-to-play-logical-games')}
+              onClick={() => navigate('/guides/strategy-card-basics')}
               className="text-orange-500 hover:text-orange-600 transition-colors text-base font-semibold"
             >
               ← Previous Post
