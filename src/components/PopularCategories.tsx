@@ -22,13 +22,13 @@ const PopularCategories: React.FC = () => {
       id: 2,
       title: "Game Reviews",
       image: "https://cdn.thedailymash.co.uk/wp-content/uploads/20190809100812/cards.jpg", // ✅ Clean image URL
-      path: "/game-reviews" // ✅ Fixed path casing to match standard
+      path: "/reviews" // ✅ Fixed path casing to match standard
     },
     {
       id: 3,
       title: "Tips & Tricks",
       image: "https://i.ytimg.com/vi/SGgFQLpmANc/mqdefault.jpg", // ✅ Clean image URL
-      path: "/tippage"
+      path: "/tip"
     },
     {
       id: 4,
